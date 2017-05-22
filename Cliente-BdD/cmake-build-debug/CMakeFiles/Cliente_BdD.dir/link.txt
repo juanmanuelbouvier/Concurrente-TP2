@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/Cliente_BdD.dir/main.cpp.o  -o Cliente_BdD 

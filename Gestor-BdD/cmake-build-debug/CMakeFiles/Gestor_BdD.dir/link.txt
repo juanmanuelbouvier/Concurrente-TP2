@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/Gestor_BdD.dir/main.cpp.o  -o Gestor_BdD 

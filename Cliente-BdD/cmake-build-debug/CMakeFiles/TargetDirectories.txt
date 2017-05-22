@@ -1,0 +1,3 @@
+/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/cmake-build-debug/CMakeFiles/Cliente_BdD.dir
