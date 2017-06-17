@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/Main.cpp" "/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o"
+  "/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/ipc/Semaforo.cpp" "/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/CMakeFiles/Gestor_BdD.dir/src/ipc/Semaforo.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

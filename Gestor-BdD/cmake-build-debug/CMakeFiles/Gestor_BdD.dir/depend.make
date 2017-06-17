@@ -3,3 +3,6 @@
 
 CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o: ../src/Main.cpp
 
+CMakeFiles/Gestor_BdD.dir/src/ipc/Semaforo.cpp.o: ../include/ipc/Semaforo.h
+CMakeFiles/Gestor_BdD.dir/src/ipc/Semaforo.cpp.o: ../src/ipc/Semaforo.cpp
+
