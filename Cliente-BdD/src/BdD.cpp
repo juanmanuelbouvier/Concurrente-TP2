@@ -1,5 +1,5 @@
 
-#include "BdD.h"
+#include "../include/BdD.h"
 
 BdD::BdD(long nroCliente) : nroCliente (nroCliente) {
     this->consultas = new Cola<Persona> ( "/bin/bash", 'q' );

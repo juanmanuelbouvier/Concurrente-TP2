@@ -123,6 +123,33 @@ Cliente_BdD/fast:
 	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/build
 .PHONY : Cliente_BdD/fast
 
+include/ipc/LockFIle.o: include/ipc/LockFIle.cpp.o
+
+.PHONY : include/ipc/LockFIle.o
+
+# target to build an object file
+include/ipc/LockFIle.cpp.o:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/include/ipc/LockFIle.cpp.o
+.PHONY : include/ipc/LockFIle.cpp.o
+
+include/ipc/LockFIle.i: include/ipc/LockFIle.cpp.i
+
+.PHONY : include/ipc/LockFIle.i
+
+# target to preprocess a source file
+include/ipc/LockFIle.cpp.i:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/include/ipc/LockFIle.cpp.i
+.PHONY : include/ipc/LockFIle.cpp.i
+
+include/ipc/LockFIle.s: include/ipc/LockFIle.cpp.s
+
+.PHONY : include/ipc/LockFIle.s
+
+# target to generate assembly for a file
+include/ipc/LockFIle.cpp.s:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/include/ipc/LockFIle.cpp.s
+.PHONY : include/ipc/LockFIle.cpp.s
+
 src/BdD.o: src/BdD.cpp.o
 
 .PHONY : src/BdD.o
@@ -149,6 +176,33 @@ src/BdD.s: src/BdD.cpp.s
 src/BdD.cpp.s:
 	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/BdD.cpp.s
 .PHONY : src/BdD.cpp.s
+
+src/Conector.o: src/Conector.cpp.o
+
+.PHONY : src/Conector.o
+
+# target to build an object file
+src/Conector.cpp.o:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.o
+.PHONY : src/Conector.cpp.o
+
+src/Conector.i: src/Conector.cpp.i
+
+.PHONY : src/Conector.i
+
+# target to preprocess a source file
+src/Conector.cpp.i:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.i
+.PHONY : src/Conector.cpp.i
+
+src/Conector.s: src/Conector.cpp.s
+
+.PHONY : src/Conector.s
+
+# target to generate assembly for a file
+src/Conector.cpp.s:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.s
+.PHONY : src/Conector.cpp.s
 
 src/Main.o: src/Main.cpp.o
 
@@ -213,9 +267,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Cliente_BdD"
+	@echo "... include/ipc/LockFIle.o"
+	@echo "... include/ipc/LockFIle.i"
+	@echo "... include/ipc/LockFIle.s"
 	@echo "... src/BdD.o"
 	@echo "... src/BdD.i"
 	@echo "... src/BdD.s"
+	@echo "... src/Conector.o"
+	@echo "... src/Conector.i"
+	@echo "... src/Conector.s"
 	@echo "... src/Main.o"
 	@echo "... src/Main.i"
 	@echo "... src/Main.s"

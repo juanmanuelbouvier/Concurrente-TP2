@@ -129,11 +129,61 @@ CMakeFiles/Cliente_BdD.dir/src/BdD.cpp.o.provides: CMakeFiles/Cliente_BdD.dir/sr
 CMakeFiles/Cliente_BdD.dir/src/BdD.cpp.o.provides.build: CMakeFiles/Cliente_BdD.dir/src/BdD.cpp.o
 
 
+CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.o: CMakeFiles/Cliente_BdD.dir/flags.make
+CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.o: ../src/Conector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.o -c /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/src/Conector.cpp
+
+CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/src/Conector.cpp > CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.i
+
+CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/src/Conector.cpp -o CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.s
+
+CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.o.requires:
+
+.PHONY : CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.o.requires
+
+CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.o.provides: CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.o.provides.build
+.PHONY : CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.o.provides
+
+CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.o.provides.build: CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.o
+
+
+CMakeFiles/Cliente_BdD.dir/include/ipc/LockFIle.cpp.o: CMakeFiles/Cliente_BdD.dir/flags.make
+CMakeFiles/Cliente_BdD.dir/include/ipc/LockFIle.cpp.o: ../include/ipc/LockFIle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Cliente_BdD.dir/include/ipc/LockFIle.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Cliente_BdD.dir/include/ipc/LockFIle.cpp.o -c /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/include/ipc/LockFIle.cpp
+
+CMakeFiles/Cliente_BdD.dir/include/ipc/LockFIle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Cliente_BdD.dir/include/ipc/LockFIle.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/include/ipc/LockFIle.cpp > CMakeFiles/Cliente_BdD.dir/include/ipc/LockFIle.cpp.i
+
+CMakeFiles/Cliente_BdD.dir/include/ipc/LockFIle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Cliente_BdD.dir/include/ipc/LockFIle.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/include/ipc/LockFIle.cpp -o CMakeFiles/Cliente_BdD.dir/include/ipc/LockFIle.cpp.s
+
+CMakeFiles/Cliente_BdD.dir/include/ipc/LockFIle.cpp.o.requires:
+
+.PHONY : CMakeFiles/Cliente_BdD.dir/include/ipc/LockFIle.cpp.o.requires
+
+CMakeFiles/Cliente_BdD.dir/include/ipc/LockFIle.cpp.o.provides: CMakeFiles/Cliente_BdD.dir/include/ipc/LockFIle.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/include/ipc/LockFIle.cpp.o.provides.build
+.PHONY : CMakeFiles/Cliente_BdD.dir/include/ipc/LockFIle.cpp.o.provides
+
+CMakeFiles/Cliente_BdD.dir/include/ipc/LockFIle.cpp.o.provides.build: CMakeFiles/Cliente_BdD.dir/include/ipc/LockFIle.cpp.o
+
+
 # Object files for target Cliente_BdD
 Cliente_BdD_OBJECTS = \
 "CMakeFiles/Cliente_BdD.dir/src/Main.cpp.o" \
 "CMakeFiles/Cliente_BdD.dir/src/ipc/Semaforo.cpp.o" \
-"CMakeFiles/Cliente_BdD.dir/src/BdD.cpp.o"
+"CMakeFiles/Cliente_BdD.dir/src/BdD.cpp.o" \
+"CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.o" \
+"CMakeFiles/Cliente_BdD.dir/include/ipc/LockFIle.cpp.o"
 
 # External object files for target Cliente_BdD
 Cliente_BdD_EXTERNAL_OBJECTS =
@@ -141,9 +191,11 @@ Cliente_BdD_EXTERNAL_OBJECTS =
 Cliente_BdD: CMakeFiles/Cliente_BdD.dir/src/Main.cpp.o
 Cliente_BdD: CMakeFiles/Cliente_BdD.dir/src/ipc/Semaforo.cpp.o
 Cliente_BdD: CMakeFiles/Cliente_BdD.dir/src/BdD.cpp.o
+Cliente_BdD: CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.o
+Cliente_BdD: CMakeFiles/Cliente_BdD.dir/include/ipc/LockFIle.cpp.o
 Cliente_BdD: CMakeFiles/Cliente_BdD.dir/build.make
 Cliente_BdD: CMakeFiles/Cliente_BdD.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Cliente_BdD"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Cliente_BdD"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Cliente_BdD.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -154,6 +206,8 @@ CMakeFiles/Cliente_BdD.dir/build: Cliente_BdD
 CMakeFiles/Cliente_BdD.dir/requires: CMakeFiles/Cliente_BdD.dir/src/Main.cpp.o.requires
 CMakeFiles/Cliente_BdD.dir/requires: CMakeFiles/Cliente_BdD.dir/src/ipc/Semaforo.cpp.o.requires
 CMakeFiles/Cliente_BdD.dir/requires: CMakeFiles/Cliente_BdD.dir/src/BdD.cpp.o.requires
+CMakeFiles/Cliente_BdD.dir/requires: CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.o.requires
+CMakeFiles/Cliente_BdD.dir/requires: CMakeFiles/Cliente_BdD.dir/include/ipc/LockFIle.cpp.o.requires
 
 .PHONY : CMakeFiles/Cliente_BdD.dir/requires
 

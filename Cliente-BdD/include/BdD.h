@@ -4,9 +4,9 @@
 
 
 #include <vector>
-#include "../include/ipc/Cola.h"
-#include "../include/Persona.h"
-#include "../include/ipc/MemoriaCompartida.h"
+#include "ipc/Cola.h"
+#include "Persona.h"
+#include "ipc/MemoriaCompartida.h"
 
 using namespace std;
 
