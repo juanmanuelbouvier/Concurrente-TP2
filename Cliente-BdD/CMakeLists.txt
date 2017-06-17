@@ -3,5 +3,5 @@ project(Cliente_BdD)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES src/Main.cpp include/ipc/Cola.h)
+set(SOURCE_FILES src/Main.cpp include/ipc/Cola.h include/Persona.h)
 add_executable(Cliente_BdD ${SOURCE_FILES})
