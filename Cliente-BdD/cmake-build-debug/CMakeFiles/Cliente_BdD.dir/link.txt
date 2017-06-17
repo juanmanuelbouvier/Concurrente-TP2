@@ -1,1 +1,1 @@
-/usr/bin/c++   -g   CMakeFiles/Cliente_BdD.dir/src/Main.cpp.o  -o Cliente_BdD 
+/usr/bin/c++   -g   CMakeFiles/Cliente_BdD.dir/src/Main.cpp.o CMakeFiles/Cliente_BdD.dir/src/ipc/Semaforo.cpp.o  -o Cliente_BdD 

@@ -3,3 +3,6 @@
 
 CMakeFiles/Cliente_BdD.dir/src/Main.cpp.o: ../src/Main.cpp
 
+CMakeFiles/Cliente_BdD.dir/src/ipc/Semaforo.cpp.o: ../include/ipc/Semaforo.h
+CMakeFiles/Cliente_BdD.dir/src/ipc/Semaforo.cpp.o: ../src/ipc/Semaforo.cpp
+

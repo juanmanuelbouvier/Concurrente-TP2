@@ -150,6 +150,33 @@ src/Main.cpp.s:
 	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/Main.cpp.s
 .PHONY : src/Main.cpp.s
 
+src/ipc/Semaforo.o: src/ipc/Semaforo.cpp.o
+
+.PHONY : src/ipc/Semaforo.o
+
+# target to build an object file
+src/ipc/Semaforo.cpp.o:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/ipc/Semaforo.cpp.o
+.PHONY : src/ipc/Semaforo.cpp.o
+
+src/ipc/Semaforo.i: src/ipc/Semaforo.cpp.i
+
+.PHONY : src/ipc/Semaforo.i
+
+# target to preprocess a source file
+src/ipc/Semaforo.cpp.i:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/ipc/Semaforo.cpp.i
+.PHONY : src/ipc/Semaforo.cpp.i
+
+src/ipc/Semaforo.s: src/ipc/Semaforo.cpp.s
+
+.PHONY : src/ipc/Semaforo.s
+
+# target to generate assembly for a file
+src/ipc/Semaforo.cpp.s:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/ipc/Semaforo.cpp.s
+.PHONY : src/ipc/Semaforo.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +189,9 @@ help:
 	@echo "... src/Main.o"
 	@echo "... src/Main.i"
 	@echo "... src/Main.s"
+	@echo "... src/ipc/Semaforo.o"
+	@echo "... src/ipc/Semaforo.i"
+	@echo "... src/ipc/Semaforo.s"
 .PHONY : help
 
 
