@@ -16,7 +16,7 @@ public:
     Cola ( const std::string& archivo,const char letra );
     ~Cola();
     int escribir ( const T& dato ) const;
-    ssize_t leer ( const int tipo,T* buffer ) const;
+    ssize_t leer ( const long tipo,T* buffer ) const;
     ssize_t leerProximo ( T* buffer ) const;
     int destruir () const;
 };
@@ -42,7 +42,7 @@ template <class T> int Cola<T> :: escribir ( const T& dato ) const {
     return msgsnd ( this->id,static_cast<const void*>(&dato),sizeof(T)-sizeof(long),0 );
 }
 
-template <class T> ssize_t Cola<T> :: leer ( const int tipo,T* buffer ) const {
+template <class T> ssize_t Cola<T> :: leer ( const long tipo,T* buffer ) const {
     return msgrcv ( this->id,static_cast<void *>(buffer),sizeof(T)-sizeof(long),tipo,0 );
 }
 

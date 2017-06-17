@@ -3,20 +3,23 @@
 #define CLIENTE_BDD_BDD_H
 
 
+#include <vector>
 #include "../include/ipc/Cola.h"
 #include "../include/Persona.h"
 #include "../include/ipc/MemoriaCompartida.h"
 
+using namespace std;
+
 class BdD {
 
 private:
-    Cola<Persona> consultas;
+    Cola<Persona>* consultas;
     long nroCliente;
 
 public:
     BdD ( long nroCliente );
     ~BdD ();
-    Persona* buscar (Persona consulta);
+    vector<Persona> buscar (Persona consulta);
     Persona insertar (Persona nuevaPersona);
 
 
