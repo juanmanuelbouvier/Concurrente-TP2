@@ -5,21 +5,28 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <string>
+#include <dirent.h>
+#include <sys/stat.h>
+
+using namespace std;
 
 class LockFile {
 
 private:
     struct flock fl;
     int fd;
-    std::string nombre;
+    string nombre;
+
+    int crearDirectorioSiNoExiste (string rutaCompletaArchivo);
 
 public:
-    LockFile ( const std::string nombre );
+    LockFile ( const string nombre );
     ~LockFile();
 
     int tomarLock ();
     int liberarLock ();
     ssize_t escribir ( const void* buffer,const ssize_t buffsize ) const;
+    ssize_t leer ( void* buffer,const ssize_t buffsize ) const;
 };
 
 

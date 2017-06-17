@@ -3,7 +3,21 @@
 #define CLIENTE_BDD_CONECTOR_H
 
 
+#include "ipc/LockFIle.h"
+
 class Conector {
+
+private:
+    bool conectado;
+    const char* archivoTmp = "../../tmp/cantClientes.txt";
+    LockFile* lock;
+
+public:
+    Conector ();
+    ~Conector ();
+    bool conectar ();
+    bool desconectar ();
+    int nroCliente ();
 
 };
 
