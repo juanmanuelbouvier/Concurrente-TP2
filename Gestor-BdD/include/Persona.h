@@ -8,9 +8,9 @@
 
 typedef struct Persona {
     long mtype;
-    char* nombre [MAX_NOMBRE];
-    char* direccion [MAX_DIRECCION];
-    char* telefono [MAX_TELEFONO];
+    char nombre [MAX_NOMBRE];
+    char direccion [MAX_DIRECCION];
+    char telefono [MAX_TELEFONO];
 } Persona;
 
 #endif //GESTOR_BDD_PERSONA_H
