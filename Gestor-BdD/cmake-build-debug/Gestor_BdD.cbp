@@ -84,7 +84,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/main.cpp">
+		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/include/ipc/Cola.h">
+			<Option target="Gestor_BdD"/>
+		</Unit>
+		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/Main.cpp">
 			<Option target="Gestor_BdD"/>
 		</Unit>
 		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/CMakeLists.txt">

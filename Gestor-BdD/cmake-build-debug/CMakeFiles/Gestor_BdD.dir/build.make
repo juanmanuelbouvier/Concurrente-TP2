@@ -57,38 +57,38 @@ include CMakeFiles/Gestor_BdD.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Gestor_BdD.dir/flags.make
 
-CMakeFiles/Gestor_BdD.dir/main.cpp.o: CMakeFiles/Gestor_BdD.dir/flags.make
-CMakeFiles/Gestor_BdD.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Gestor_BdD.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Gestor_BdD.dir/main.cpp.o -c /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/main.cpp
+CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o: CMakeFiles/Gestor_BdD.dir/flags.make
+CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o: ../src/Main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o -c /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/Main.cpp
 
-CMakeFiles/Gestor_BdD.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gestor_BdD.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/main.cpp > CMakeFiles/Gestor_BdD.dir/main.cpp.i
+CMakeFiles/Gestor_BdD.dir/src/Main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gestor_BdD.dir/src/Main.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/Main.cpp > CMakeFiles/Gestor_BdD.dir/src/Main.cpp.i
 
-CMakeFiles/Gestor_BdD.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gestor_BdD.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/main.cpp -o CMakeFiles/Gestor_BdD.dir/main.cpp.s
+CMakeFiles/Gestor_BdD.dir/src/Main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gestor_BdD.dir/src/Main.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/Main.cpp -o CMakeFiles/Gestor_BdD.dir/src/Main.cpp.s
 
-CMakeFiles/Gestor_BdD.dir/main.cpp.o.requires:
+CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o.requires:
 
-.PHONY : CMakeFiles/Gestor_BdD.dir/main.cpp.o.requires
+.PHONY : CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o.requires
 
-CMakeFiles/Gestor_BdD.dir/main.cpp.o.provides: CMakeFiles/Gestor_BdD.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/Gestor_BdD.dir/main.cpp.o.provides
+CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o.provides: CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o.provides.build
+.PHONY : CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o.provides
 
-CMakeFiles/Gestor_BdD.dir/main.cpp.o.provides.build: CMakeFiles/Gestor_BdD.dir/main.cpp.o
+CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o.provides.build: CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o
 
 
 # Object files for target Gestor_BdD
 Gestor_BdD_OBJECTS = \
-"CMakeFiles/Gestor_BdD.dir/main.cpp.o"
+"CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o"
 
 # External object files for target Gestor_BdD
 Gestor_BdD_EXTERNAL_OBJECTS =
 
-Gestor_BdD: CMakeFiles/Gestor_BdD.dir/main.cpp.o
+Gestor_BdD: CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o
 Gestor_BdD: CMakeFiles/Gestor_BdD.dir/build.make
 Gestor_BdD: CMakeFiles/Gestor_BdD.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Gestor_BdD"
@@ -99,7 +99,7 @@ CMakeFiles/Gestor_BdD.dir/build: Gestor_BdD
 
 .PHONY : CMakeFiles/Gestor_BdD.dir/build
 
-CMakeFiles/Gestor_BdD.dir/requires: CMakeFiles/Gestor_BdD.dir/main.cpp.o.requires
+CMakeFiles/Gestor_BdD.dir/requires: CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o.requires
 
 .PHONY : CMakeFiles/Gestor_BdD.dir/requires
 

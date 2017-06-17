@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Gestor_BdD.dir/main.cpp.o"
+  "CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o"
   "Gestor_BdD.pdb"
   "Gestor_BdD"
 )
