@@ -123,6 +123,33 @@ Cliente_BdD/fast:
 	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/build
 .PHONY : Cliente_BdD/fast
 
+include/ipc/MemoriaCompartida.o: include/ipc/MemoriaCompartida.cpp.o
+
+.PHONY : include/ipc/MemoriaCompartida.o
+
+# target to build an object file
+include/ipc/MemoriaCompartida.cpp.o:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/include/ipc/MemoriaCompartida.cpp.o
+.PHONY : include/ipc/MemoriaCompartida.cpp.o
+
+include/ipc/MemoriaCompartida.i: include/ipc/MemoriaCompartida.cpp.i
+
+.PHONY : include/ipc/MemoriaCompartida.i
+
+# target to preprocess a source file
+include/ipc/MemoriaCompartida.cpp.i:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/include/ipc/MemoriaCompartida.cpp.i
+.PHONY : include/ipc/MemoriaCompartida.cpp.i
+
+include/ipc/MemoriaCompartida.s: include/ipc/MemoriaCompartida.cpp.s
+
+.PHONY : include/ipc/MemoriaCompartida.s
+
+# target to generate assembly for a file
+include/ipc/MemoriaCompartida.cpp.s:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/include/ipc/MemoriaCompartida.cpp.s
+.PHONY : include/ipc/MemoriaCompartida.cpp.s
+
 src/Main.o: src/Main.cpp.o
 
 .PHONY : src/Main.o
@@ -186,6 +213,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Cliente_BdD"
+	@echo "... include/ipc/MemoriaCompartida.o"
+	@echo "... include/ipc/MemoriaCompartida.i"
+	@echo "... include/ipc/MemoriaCompartida.s"
 	@echo "... src/Main.o"
 	@echo "... src/Main.i"
 	@echo "... src/Main.s"
