@@ -84,7 +84,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/main.cpp">
+		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/include/ipc/Cola.h">
+			<Option target="Cliente_BdD"/>
+		</Unit>
+		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/src/Main.cpp">
 			<Option target="Cliente_BdD"/>
 		</Unit>
 		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/CMakeLists.txt">

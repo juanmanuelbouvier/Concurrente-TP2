@@ -57,38 +57,38 @@ include CMakeFiles/Cliente_BdD.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Cliente_BdD.dir/flags.make
 
-CMakeFiles/Cliente_BdD.dir/main.cpp.o: CMakeFiles/Cliente_BdD.dir/flags.make
-CMakeFiles/Cliente_BdD.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Cliente_BdD.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Cliente_BdD.dir/main.cpp.o -c /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/main.cpp
+CMakeFiles/Cliente_BdD.dir/src/Main.cpp.o: CMakeFiles/Cliente_BdD.dir/flags.make
+CMakeFiles/Cliente_BdD.dir/src/Main.cpp.o: ../src/Main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Cliente_BdD.dir/src/Main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Cliente_BdD.dir/src/Main.cpp.o -c /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/src/Main.cpp
 
-CMakeFiles/Cliente_BdD.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Cliente_BdD.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/main.cpp > CMakeFiles/Cliente_BdD.dir/main.cpp.i
+CMakeFiles/Cliente_BdD.dir/src/Main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Cliente_BdD.dir/src/Main.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/src/Main.cpp > CMakeFiles/Cliente_BdD.dir/src/Main.cpp.i
 
-CMakeFiles/Cliente_BdD.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Cliente_BdD.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/main.cpp -o CMakeFiles/Cliente_BdD.dir/main.cpp.s
+CMakeFiles/Cliente_BdD.dir/src/Main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Cliente_BdD.dir/src/Main.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/src/Main.cpp -o CMakeFiles/Cliente_BdD.dir/src/Main.cpp.s
 
-CMakeFiles/Cliente_BdD.dir/main.cpp.o.requires:
+CMakeFiles/Cliente_BdD.dir/src/Main.cpp.o.requires:
 
-.PHONY : CMakeFiles/Cliente_BdD.dir/main.cpp.o.requires
+.PHONY : CMakeFiles/Cliente_BdD.dir/src/Main.cpp.o.requires
 
-CMakeFiles/Cliente_BdD.dir/main.cpp.o.provides: CMakeFiles/Cliente_BdD.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/Cliente_BdD.dir/main.cpp.o.provides
+CMakeFiles/Cliente_BdD.dir/src/Main.cpp.o.provides: CMakeFiles/Cliente_BdD.dir/src/Main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/Main.cpp.o.provides.build
+.PHONY : CMakeFiles/Cliente_BdD.dir/src/Main.cpp.o.provides
 
-CMakeFiles/Cliente_BdD.dir/main.cpp.o.provides.build: CMakeFiles/Cliente_BdD.dir/main.cpp.o
+CMakeFiles/Cliente_BdD.dir/src/Main.cpp.o.provides.build: CMakeFiles/Cliente_BdD.dir/src/Main.cpp.o
 
 
 # Object files for target Cliente_BdD
 Cliente_BdD_OBJECTS = \
-"CMakeFiles/Cliente_BdD.dir/main.cpp.o"
+"CMakeFiles/Cliente_BdD.dir/src/Main.cpp.o"
 
 # External object files for target Cliente_BdD
 Cliente_BdD_EXTERNAL_OBJECTS =
 
-Cliente_BdD: CMakeFiles/Cliente_BdD.dir/main.cpp.o
+Cliente_BdD: CMakeFiles/Cliente_BdD.dir/src/Main.cpp.o
 Cliente_BdD: CMakeFiles/Cliente_BdD.dir/build.make
 Cliente_BdD: CMakeFiles/Cliente_BdD.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Cliente_BdD"
@@ -99,7 +99,7 @@ CMakeFiles/Cliente_BdD.dir/build: Cliente_BdD
 
 .PHONY : CMakeFiles/Cliente_BdD.dir/build
 
-CMakeFiles/Cliente_BdD.dir/requires: CMakeFiles/Cliente_BdD.dir/main.cpp.o.requires
+CMakeFiles/Cliente_BdD.dir/requires: CMakeFiles/Cliente_BdD.dir/src/Main.cpp.o.requires
 
 .PHONY : CMakeFiles/Cliente_BdD.dir/requires
 
