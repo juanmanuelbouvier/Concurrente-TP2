@@ -123,32 +123,32 @@ Cliente_BdD/fast:
 	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/build
 .PHONY : Cliente_BdD/fast
 
-include/ipc/MemoriaCompartida.o: include/ipc/MemoriaCompartida.cpp.o
+src/BdD.o: src/BdD.cpp.o
 
-.PHONY : include/ipc/MemoriaCompartida.o
+.PHONY : src/BdD.o
 
 # target to build an object file
-include/ipc/MemoriaCompartida.cpp.o:
-	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/include/ipc/MemoriaCompartida.cpp.o
-.PHONY : include/ipc/MemoriaCompartida.cpp.o
+src/BdD.cpp.o:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/BdD.cpp.o
+.PHONY : src/BdD.cpp.o
 
-include/ipc/MemoriaCompartida.i: include/ipc/MemoriaCompartida.cpp.i
+src/BdD.i: src/BdD.cpp.i
 
-.PHONY : include/ipc/MemoriaCompartida.i
+.PHONY : src/BdD.i
 
 # target to preprocess a source file
-include/ipc/MemoriaCompartida.cpp.i:
-	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/include/ipc/MemoriaCompartida.cpp.i
-.PHONY : include/ipc/MemoriaCompartida.cpp.i
+src/BdD.cpp.i:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/BdD.cpp.i
+.PHONY : src/BdD.cpp.i
 
-include/ipc/MemoriaCompartida.s: include/ipc/MemoriaCompartida.cpp.s
+src/BdD.s: src/BdD.cpp.s
 
-.PHONY : include/ipc/MemoriaCompartida.s
+.PHONY : src/BdD.s
 
 # target to generate assembly for a file
-include/ipc/MemoriaCompartida.cpp.s:
-	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/include/ipc/MemoriaCompartida.cpp.s
-.PHONY : include/ipc/MemoriaCompartida.cpp.s
+src/BdD.cpp.s:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/BdD.cpp.s
+.PHONY : src/BdD.cpp.s
 
 src/Main.o: src/Main.cpp.o
 
@@ -213,9 +213,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Cliente_BdD"
-	@echo "... include/ipc/MemoriaCompartida.o"
-	@echo "... include/ipc/MemoriaCompartida.i"
-	@echo "... include/ipc/MemoriaCompartida.s"
+	@echo "... src/BdD.o"
+	@echo "... src/BdD.i"
+	@echo "... src/BdD.s"
 	@echo "... src/Main.o"
 	@echo "... src/Main.i"
 	@echo "... src/Main.s"
