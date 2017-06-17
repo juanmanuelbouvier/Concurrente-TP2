@@ -96,9 +96,6 @@
 		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/include/ipc/Cola.h">
 			<Option target="Cliente_BdD"/>
 		</Unit>
-		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/include/ipc/LockFIle.cpp">
-			<Option target="Cliente_BdD"/>
-		</Unit>
 		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/include/ipc/LockFIle.h">
 			<Option target="Cliente_BdD"/>
 		</Unit>
@@ -115,6 +112,9 @@
 			<Option target="Cliente_BdD"/>
 		</Unit>
 		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/src/Main.cpp">
+			<Option target="Cliente_BdD"/>
+		</Unit>
+		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/src/ipc/LockFIle.cpp">
 			<Option target="Cliente_BdD"/>
 		</Unit>
 		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/src/ipc/Semaforo.cpp">

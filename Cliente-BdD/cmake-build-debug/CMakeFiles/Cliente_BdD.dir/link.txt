@@ -1,1 +1,1 @@
-/usr/bin/c++   -g   CMakeFiles/Cliente_BdD.dir/src/Main.cpp.o CMakeFiles/Cliente_BdD.dir/src/ipc/Semaforo.cpp.o CMakeFiles/Cliente_BdD.dir/src/BdD.cpp.o CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.o CMakeFiles/Cliente_BdD.dir/include/ipc/LockFIle.cpp.o  -o Cliente_BdD 
+/usr/bin/c++   -g   CMakeFiles/Cliente_BdD.dir/src/Main.cpp.o CMakeFiles/Cliente_BdD.dir/src/ipc/Semaforo.cpp.o CMakeFiles/Cliente_BdD.dir/src/BdD.cpp.o CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.o CMakeFiles/Cliente_BdD.dir/src/ipc/LockFIle.cpp.o  -o Cliente_BdD 

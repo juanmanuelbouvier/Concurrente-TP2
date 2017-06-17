@@ -3,6 +3,7 @@
 
 Conector::Conector() : conectado (true) {
     this->lock = new LockFile (archivoTmp);
+    initArchivo();
 }
 
 Conector::~Conector() {
@@ -57,4 +58,17 @@ int Conector::nroCliente() {
 
     this->lock->liberarLock();
     return cantClientes;
+}
+
+void Conector::initArchivo() {
+    this->lock->tomarLock();
+
+    // TODO: Esto solo soporta hasta 9 conexiones en simultaneo!
+    char numLeido;
+    int bytesLeidos = (int) this->lock->leer(&numLeido, 1);
+    if (bytesLeidos == 0) {
+        int cantClientesInit = 0;
+        this->lock->escribir(&cantClientesInit, 1);
+    }
+    this->lock->liberarLock();
 }

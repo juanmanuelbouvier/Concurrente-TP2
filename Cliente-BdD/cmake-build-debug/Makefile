@@ -123,33 +123,6 @@ Cliente_BdD/fast:
 	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/build
 .PHONY : Cliente_BdD/fast
 
-include/ipc/LockFIle.o: include/ipc/LockFIle.cpp.o
-
-.PHONY : include/ipc/LockFIle.o
-
-# target to build an object file
-include/ipc/LockFIle.cpp.o:
-	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/include/ipc/LockFIle.cpp.o
-.PHONY : include/ipc/LockFIle.cpp.o
-
-include/ipc/LockFIle.i: include/ipc/LockFIle.cpp.i
-
-.PHONY : include/ipc/LockFIle.i
-
-# target to preprocess a source file
-include/ipc/LockFIle.cpp.i:
-	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/include/ipc/LockFIle.cpp.i
-.PHONY : include/ipc/LockFIle.cpp.i
-
-include/ipc/LockFIle.s: include/ipc/LockFIle.cpp.s
-
-.PHONY : include/ipc/LockFIle.s
-
-# target to generate assembly for a file
-include/ipc/LockFIle.cpp.s:
-	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/include/ipc/LockFIle.cpp.s
-.PHONY : include/ipc/LockFIle.cpp.s
-
 src/BdD.o: src/BdD.cpp.o
 
 .PHONY : src/BdD.o
@@ -231,6 +204,33 @@ src/Main.cpp.s:
 	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/Main.cpp.s
 .PHONY : src/Main.cpp.s
 
+src/ipc/LockFIle.o: src/ipc/LockFIle.cpp.o
+
+.PHONY : src/ipc/LockFIle.o
+
+# target to build an object file
+src/ipc/LockFIle.cpp.o:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/ipc/LockFIle.cpp.o
+.PHONY : src/ipc/LockFIle.cpp.o
+
+src/ipc/LockFIle.i: src/ipc/LockFIle.cpp.i
+
+.PHONY : src/ipc/LockFIle.i
+
+# target to preprocess a source file
+src/ipc/LockFIle.cpp.i:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/ipc/LockFIle.cpp.i
+.PHONY : src/ipc/LockFIle.cpp.i
+
+src/ipc/LockFIle.s: src/ipc/LockFIle.cpp.s
+
+.PHONY : src/ipc/LockFIle.s
+
+# target to generate assembly for a file
+src/ipc/LockFIle.cpp.s:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/ipc/LockFIle.cpp.s
+.PHONY : src/ipc/LockFIle.cpp.s
+
 src/ipc/Semaforo.o: src/ipc/Semaforo.cpp.o
 
 .PHONY : src/ipc/Semaforo.o
@@ -267,9 +267,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Cliente_BdD"
-	@echo "... include/ipc/LockFIle.o"
-	@echo "... include/ipc/LockFIle.i"
-	@echo "... include/ipc/LockFIle.s"
 	@echo "... src/BdD.o"
 	@echo "... src/BdD.i"
 	@echo "... src/BdD.s"
@@ -279,6 +276,9 @@ help:
 	@echo "... src/Main.o"
 	@echo "... src/Main.i"
 	@echo "... src/Main.s"
+	@echo "... src/ipc/LockFIle.o"
+	@echo "... src/ipc/LockFIle.i"
+	@echo "... src/ipc/LockFIle.s"
 	@echo "... src/ipc/Semaforo.o"
 	@echo "... src/ipc/Semaforo.i"
 	@echo "... src/ipc/Semaforo.s"

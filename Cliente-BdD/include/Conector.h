@@ -12,6 +12,8 @@ private:
     const char* archivoTmp = "../../tmp/cantClientes.txt";
     LockFile* lock;
 
+    void initArchivo();
+
 public:
     Conector ();
     ~Conector ();
