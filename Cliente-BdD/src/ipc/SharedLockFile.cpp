@@ -14,7 +14,7 @@ SharedLockFile :: SharedLockFile ( const string nombre ) {
 }
 
 int SharedLockFile :: tomarLock () {
-    this->fl.l_type = F_WRLCK;
+    this->fl.l_type = F_RDLCK;
     return fcntl ( this->fd,F_SETLKW,&(this->fl) );
 }
 
