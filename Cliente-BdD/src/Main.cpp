@@ -29,7 +29,7 @@ void ingresarPersona(Persona* persona){
 int main() {
     Conector* conector = new Conector();
     conector->conectar();
-    Logger :: getInstance() -> info( "Cliente", "Soy el cliente nro " + to_string(conector->nroCliente()) );
+    Logger :: getInstance() -> info( "Cliente", "Soy el cliente nro " + to_string(conector->nroCliente()) + " y me voy a conectar");
     int nroCliente = conector->nroCliente();
 
     BdD* bdd = new BdD(nroCliente);
@@ -66,10 +66,12 @@ int main() {
                 cout << "PERSONA BUSCADA: " << personaBuscar.nombre << " DIR: " <<
                      personaBuscar.direccion << " TEL: "<< personaBuscar.telefono << endl;
 
-                bdd->buscar(personaBuscar);
+                //vector<Persona> resultado;
+                //resultado = bdd->buscar(personaBuscar);
                 break;
 
             case (SALIR):
+                Logger :: getInstance() -> info( "Cliente", "Soy el cliente nro " + to_string(conector->nroCliente()) + " y me voy a desconectar" );
                 conector->desconectar();
                 delete conector;
                 delete bdd;
