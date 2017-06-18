@@ -123,6 +123,33 @@ Gestor_BdD/fast:
 	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/build
 .PHONY : Gestor_BdD/fast
 
+src/Logger.o: src/Logger.cpp.o
+
+.PHONY : src/Logger.o
+
+# target to build an object file
+src/Logger.cpp.o:
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/Logger.cpp.o
+.PHONY : src/Logger.cpp.o
+
+src/Logger.i: src/Logger.cpp.i
+
+.PHONY : src/Logger.i
+
+# target to preprocess a source file
+src/Logger.cpp.i:
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/Logger.cpp.i
+.PHONY : src/Logger.cpp.i
+
+src/Logger.s: src/Logger.cpp.s
+
+.PHONY : src/Logger.s
+
+# target to generate assembly for a file
+src/Logger.cpp.s:
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/Logger.cpp.s
+.PHONY : src/Logger.cpp.s
+
 src/Main.o: src/Main.cpp.o
 
 .PHONY : src/Main.o
@@ -149,6 +176,33 @@ src/Main.s: src/Main.cpp.s
 src/Main.cpp.s:
 	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/Main.cpp.s
 .PHONY : src/Main.cpp.s
+
+src/ipc/ExclusiveLockFile.o: src/ipc/ExclusiveLockFile.cpp.o
+
+.PHONY : src/ipc/ExclusiveLockFile.o
+
+# target to build an object file
+src/ipc/ExclusiveLockFile.cpp.o:
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/ipc/ExclusiveLockFile.cpp.o
+.PHONY : src/ipc/ExclusiveLockFile.cpp.o
+
+src/ipc/ExclusiveLockFile.i: src/ipc/ExclusiveLockFile.cpp.i
+
+.PHONY : src/ipc/ExclusiveLockFile.i
+
+# target to preprocess a source file
+src/ipc/ExclusiveLockFile.cpp.i:
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/ipc/ExclusiveLockFile.cpp.i
+.PHONY : src/ipc/ExclusiveLockFile.cpp.i
+
+src/ipc/ExclusiveLockFile.s: src/ipc/ExclusiveLockFile.cpp.s
+
+.PHONY : src/ipc/ExclusiveLockFile.s
+
+# target to generate assembly for a file
+src/ipc/ExclusiveLockFile.cpp.s:
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/ipc/ExclusiveLockFile.cpp.s
+.PHONY : src/ipc/ExclusiveLockFile.cpp.s
 
 src/ipc/Semaforo.o: src/ipc/Semaforo.cpp.o
 
@@ -186,9 +240,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Gestor_BdD"
+	@echo "... src/Logger.o"
+	@echo "... src/Logger.i"
+	@echo "... src/Logger.s"
 	@echo "... src/Main.o"
 	@echo "... src/Main.i"
 	@echo "... src/Main.s"
+	@echo "... src/ipc/ExclusiveLockFile.o"
+	@echo "... src/ipc/ExclusiveLockFile.i"
+	@echo "... src/ipc/ExclusiveLockFile.s"
 	@echo "... src/ipc/Semaforo.o"
 	@echo "... src/ipc/Semaforo.i"
 	@echo "... src/ipc/Semaforo.s"

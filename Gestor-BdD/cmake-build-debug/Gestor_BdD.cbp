@@ -84,16 +84,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/include/Logger.h">
+			<Option target="Gestor_BdD"/>
+		</Unit>
 		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/include/Persona.h">
 			<Option target="Gestor_BdD"/>
 		</Unit>
 		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/include/ipc/Cola.h">
 			<Option target="Gestor_BdD"/>
 		</Unit>
+		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/include/ipc/ExclusiveLockFile.h">
+			<Option target="Gestor_BdD"/>
+		</Unit>
 		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/include/ipc/Semaforo.h">
 			<Option target="Gestor_BdD"/>
 		</Unit>
+		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/Logger.cpp">
+			<Option target="Gestor_BdD"/>
+		</Unit>
 		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/Main.cpp">
+			<Option target="Gestor_BdD"/>
+		</Unit>
+		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/ipc/ExclusiveLockFile.cpp">
 			<Option target="Gestor_BdD"/>
 		</Unit>
 		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/ipc/Semaforo.cpp">

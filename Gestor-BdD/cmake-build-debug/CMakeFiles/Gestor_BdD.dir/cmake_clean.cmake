@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o"
   "CMakeFiles/Gestor_BdD.dir/src/ipc/Semaforo.cpp.o"
+  "CMakeFiles/Gestor_BdD.dir/src/Logger.cpp.o"
+  "CMakeFiles/Gestor_BdD.dir/src/ipc/ExclusiveLockFile.cpp.o"
   "Gestor_BdD.pdb"
   "Gestor_BdD"
 )
