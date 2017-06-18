@@ -28,6 +28,11 @@ ssize_t ExclusiveLockFile :: escribir ( const void* buffer,const ssize_t buffsiz
     return write ( this->fd,buffer,buffsize );
 }
 
+ssize_t ExclusiveLockFile :: remplazar ( const void* buffer,const ssize_t buffsize ) const {
+    lseek ( this->fd,0,SEEK_SET );
+    return write ( this->fd,buffer,buffsize );
+}
+
 ExclusiveLockFile :: ~ExclusiveLockFile () {
     close ( this->fd );
 }

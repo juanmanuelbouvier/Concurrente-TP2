@@ -11,10 +11,10 @@ class Conector {
 private:
     bool conectado;
     const char* archivoTmp = "../../tmp/cantClientes.txt";
-    ExclusiveLockFile* writeLock;
-    SharedLockFile* readLock;
 
     void initArchivo();
+    int leerNumero ();
+    void escribirNumero (const int nro);
 
 public:
     Conector ();

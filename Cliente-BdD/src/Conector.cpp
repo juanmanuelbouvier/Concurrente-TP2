@@ -1,76 +1,64 @@
 
 #include "../include/Conector.h"
 
-Conector::Conector() : conectado (true) {
-    this->writeLock = new ExclusiveLockFile (archivoTmp);
-    this->readLock = new SharedLockFile (archivoTmp);
+Conector::Conector() : conectado (false) {
     initArchivo();
 }
 
 Conector::~Conector() {
     this->conectado = false;
-    delete writeLock;
-    delete readLock;
 }
 
 bool Conector::conectar() {
-    if (conectado)
+    if (this->conectado)
         return false;
 
-    char numLeido;  // TODO: Esto solo soporta hasta 9 conexiones en simultaneo!
-    this->readLock->tomarLock();
-    this->readLock->leer(&numLeido, 1);
-    this->readLock->liberarLock();
-
-    int cantClientes = atoi(&numLeido);
-    cantClientes++;
-    this->writeLock->tomarLock();
-    this->writeLock->escribir(&cantClientes, 1);
-    this->writeLock->liberarLock();
-
+    this->conectado = true;
+    int numLeido = leerNumero();
+    int cantClientes = numLeido + 1;
+    escribirNumero(cantClientes);
     return true;
 }
 
 bool Conector::desconectar() {
-    if (!conectado)
+    if (!this->conectado)
         return false;
 
-    char numLeido;  // TODO: Esto solo soporta hasta 9 conexiones en simultaneo!
-    this->readLock->tomarLock();
-    this->readLock->leer(&numLeido, 1);
-    this->readLock->liberarLock();
-
-    int cantClientes = atoi(&numLeido);
-    cantClientes--;
-    this->writeLock->tomarLock();
-    this->writeLock->escribir(&cantClientes, 1);
-    this->writeLock->liberarLock();
-
+    this->conectado = false;
+    int numLeido = leerNumero();
+    int cantClientes = numLeido - 1;
+    escribirNumero(cantClientes);
     return true;
 }
 
 int Conector::nroCliente() {
-    if (!conectado)
+    if (!this->conectado)
         return 0;
 
-    char numLeido;  // TODO: Esto solo soporta hasta 9 conexiones en simultaneo!
-    this->readLock->tomarLock();
-    this->readLock->leer(&numLeido, 1);
-    this->readLock->liberarLock();
-    int cantClientes = atoi(&numLeido);
-    return cantClientes;
+    return leerNumero();
 }
 
 void Conector::initArchivo() {
-    char numLeido;  // TODO: Esto solo soporta hasta 9 conexiones en simultaneo!
-    this->readLock->tomarLock();
-    int bytesLeidos = (int) this->readLock->leer(&numLeido, 1);
-    this->readLock->liberarLock();
-    if (bytesLeidos <= 0) {
+    int numLeido = leerNumero();
+    if (numLeido <= 0) {
         int cantClientesInit = 0;
-        this->writeLock->tomarLock();
-        this->writeLock->escribir(&cantClientesInit, 1);
-        this->writeLock->liberarLock();
+        escribirNumero(cantClientesInit);
     }
+}
+
+int Conector :: leerNumero () {
+    SharedLockFile readLock = SharedLockFile (archivoTmp);
+    int numLeido;
+    readLock.tomarLock();
+    readLock.leer(&numLeido, sizeof(int));
+    readLock.liberarLock();
+    return numLeido;
+}
+
+void Conector::escribirNumero(const int nro) {
+    ExclusiveLockFile writeLock = ExclusiveLockFile (archivoTmp);
+    writeLock.tomarLock();
+    writeLock.remplazar(&nro, sizeof(int));
+    writeLock.liberarLock();
 }
 

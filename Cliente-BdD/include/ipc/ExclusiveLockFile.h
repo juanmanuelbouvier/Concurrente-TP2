@@ -26,6 +26,7 @@ public:
     int tomarLock ();
     int liberarLock ();
     ssize_t escribir ( const void* buffer,const ssize_t buffsize ) const;
+    ssize_t remplazar ( const void* buffer,const ssize_t buffsize ) const;
 };
 
 
