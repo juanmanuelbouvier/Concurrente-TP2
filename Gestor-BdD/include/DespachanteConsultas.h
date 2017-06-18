@@ -7,6 +7,8 @@
 #include "ipc/Cola.h"
 #include "../include/Buscador.h"
 #include "../include/Insertor.h"
+#include "../include/Logger.h"
+
 
 class DespachanteConsultas {
 

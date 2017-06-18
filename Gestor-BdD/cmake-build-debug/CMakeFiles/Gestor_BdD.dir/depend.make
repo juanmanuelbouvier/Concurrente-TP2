@@ -9,8 +9,10 @@ CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.o: ../src/Buscador.cpp
 CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.o: ../include/Buscador.h
 CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.o: ../include/DespachanteConsultas.h
 CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.o: ../include/Insertor.h
+CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.o: ../include/Logger.h
 CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.o: ../include/Persona.h
 CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.o: ../include/ipc/Cola.h
+CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.o: ../include/ipc/ExclusiveLockFile.h
 CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.o: ../include/ipc/SharedLockFile.h
 CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.o: ../src/DespachanteConsultas.cpp
 

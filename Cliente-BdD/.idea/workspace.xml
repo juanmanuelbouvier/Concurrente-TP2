@@ -34,7 +34,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b828f632-99e0-4396-a03f-e903cdccfc72" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Gestor-BdD/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Gestor-BdD/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Gestor-BdD/cmake-build-debug/CMakeFiles/Gestor_BdD.dir/depend.make" afterPath="$PROJECT_DIR$/../Gestor-BdD/cmake-build-debug/CMakeFiles/Gestor_BdD.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Gestor-BdD/include/DespachanteConsultas.h" afterPath="$PROJECT_DIR$/../Gestor-BdD/include/DespachanteConsultas.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Gestor-BdD/src/DespachanteConsultas.cpp" afterPath="$PROJECT_DIR$/../Gestor-BdD/src/DespachanteConsultas.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Gestor-BdD/src/Main.cpp" afterPath="$PROJECT_DIR$/../Gestor-BdD/src/Main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -489,7 +490,7 @@
       <updated>1497716326990</updated>
       <workItem from="1497716328335" duration="16151000" />
       <workItem from="1497748575428" duration="9722000" />
-      <workItem from="1497794819460" duration="3552000" />
+      <workItem from="1497794819460" duration="3804000" />
     </task>
     <task id="LOCAL-00001" summary="Struct de Persona agregado en cliente">
       <created>1497719054468</created>
@@ -614,7 +615,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29425000" />
+    <option name="totallyTimeSpent" value="29677000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1987" y="24" width="1853" height="1056" extended-state="6" />

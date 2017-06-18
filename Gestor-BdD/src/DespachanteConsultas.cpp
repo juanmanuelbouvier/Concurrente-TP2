@@ -23,10 +23,12 @@ void DespachanteConsultas::despachar() {
                 aEncolar.mtype = consulta.mtype;
                 this->consultas->escribir( aEncolar );
             }
+            Logger :: getInstance() -> info( "Gestor", "Consulta de busqueda resuelta" );
         } else if (consulta.tipoConsulta == INSERCION) {
             Insertor insertor = Insertor();
             insertor.insertar(consulta);
             this->consultas->escribir( consulta );  // Devuelvo lo mismo como confirmacion de que ya se persistio el dato.
+            Logger :: getInstance() -> info( "Gestor", "Consulta de insercion resuelta" );
         }
         exit(0);
     }

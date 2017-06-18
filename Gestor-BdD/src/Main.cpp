@@ -1,6 +1,5 @@
 #include <iostream>
 #include "../include/DespachanteConsultas.h"
-#include "../include/Logger.h"
 
 int main() {
     std::cout << "Soy gestor!" << std::endl;
@@ -9,9 +8,8 @@ int main() {
 
     DespachanteConsultas despachante = DespachanteConsultas ();
     while (true) {  // TODO: Usar gracefulQuit con signals para matar el servidor.
-        Logger :: getInstance() -> info( "Gestor", "Esperando consulta..." );
         despachante.despachar();
-        sleep(1);   // TODO: Sacar el sleep!
+        sleep(1);   // TODO: Si lo sacamos se me muere la compu.
     }
 
     // TODO: Borrar archivo temporal cantClientes.txt
