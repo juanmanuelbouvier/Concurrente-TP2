@@ -34,9 +34,8 @@
   <component name="ChangeListManager">
     <list default="true" id="93dd7445-aa2c-4904-be54-c44dc4f56165" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cliente-BdD/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Cliente-BdD/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cliente-BdD/include/Persona.h" afterPath="$PROJECT_DIR$/../Cliente-BdD/include/Persona.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cliente-BdD/src/BdD.cpp" afterPath="$PROJECT_DIR$/../Cliente-BdD/src/BdD.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Persona.h" afterPath="$PROJECT_DIR$/include/Persona.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,17 +51,17 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Persona.h" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Persona.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/include/Persona.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+            <state relative-caret-position="288">
+              <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Semaforo.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Semaforo.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/ipc/Semaforo.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
@@ -84,11 +83,11 @@
       <list>
         <option value="$PROJECT_DIR$/include/ipc/Semaforo.h" />
         <option value="$PROJECT_DIR$/src/ipc/Semaforo.cpp" />
-        <option value="$PROJECT_DIR$/include/Persona.h" />
         <option value="$PROJECT_DIR$/include/Logger.h" />
         <option value="$PROJECT_DIR$/src/Logger.cpp" />
         <option value="$PROJECT_DIR$/include/ipc/ExclusiveLockFile.h" />
         <option value="$PROJECT_DIR$/src/ipc/ExclusiveLockFile.cpp" />
+        <option value="$PROJECT_DIR$/include/Persona.h" />
       </list>
     </option>
   </component>
@@ -99,7 +98,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1853" />
+    <option name="x" value="67" />
     <option name="y" value="24" />
     <option name="width" value="1853" />
     <option name="height" value="1056" />
@@ -410,7 +409,7 @@
       <updated>1497716275997</updated>
       <workItem from="1497716277335" duration="43000" />
       <workItem from="1497719157641" duration="4549000" />
-      <workItem from="1497794890857" duration="1216000" />
+      <workItem from="1497794890857" duration="1341000" />
     </task>
     <task id="LOCAL-00001" summary="Agrego struct Persona al gestor">
       <created>1497719250955</created>
@@ -451,10 +450,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5808000" />
+    <option name="totallyTimeSpent" value="5933000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1853" y="24" width="1853" height="1056" extended-state="6" />
+    <frame x="67" y="24" width="1853" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24972677" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -561,18 +560,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/Persona.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/ipc/Semaforo.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Persona.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
           <folding />
         </state>
       </provider>
