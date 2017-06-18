@@ -231,32 +231,32 @@ src/Main.cpp.s:
 	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/Main.cpp.s
 .PHONY : src/Main.cpp.s
 
-src/ipc/LockFile.o: src/ipc/LockFile.cpp.o
+src/ipc/ExclusiveLockFile.o: src/ipc/ExclusiveLockFile.cpp.o
 
-.PHONY : src/ipc/LockFile.o
+.PHONY : src/ipc/ExclusiveLockFile.o
 
 # target to build an object file
-src/ipc/LockFile.cpp.o:
-	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/ipc/LockFile.cpp.o
-.PHONY : src/ipc/LockFile.cpp.o
+src/ipc/ExclusiveLockFile.cpp.o:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/ipc/ExclusiveLockFile.cpp.o
+.PHONY : src/ipc/ExclusiveLockFile.cpp.o
 
-src/ipc/LockFile.i: src/ipc/LockFile.cpp.i
+src/ipc/ExclusiveLockFile.i: src/ipc/ExclusiveLockFile.cpp.i
 
-.PHONY : src/ipc/LockFile.i
+.PHONY : src/ipc/ExclusiveLockFile.i
 
 # target to preprocess a source file
-src/ipc/LockFile.cpp.i:
-	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/ipc/LockFile.cpp.i
-.PHONY : src/ipc/LockFile.cpp.i
+src/ipc/ExclusiveLockFile.cpp.i:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/ipc/ExclusiveLockFile.cpp.i
+.PHONY : src/ipc/ExclusiveLockFile.cpp.i
 
-src/ipc/LockFile.s: src/ipc/LockFile.cpp.s
+src/ipc/ExclusiveLockFile.s: src/ipc/ExclusiveLockFile.cpp.s
 
-.PHONY : src/ipc/LockFile.s
+.PHONY : src/ipc/ExclusiveLockFile.s
 
 # target to generate assembly for a file
-src/ipc/LockFile.cpp.s:
-	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/ipc/LockFile.cpp.s
-.PHONY : src/ipc/LockFile.cpp.s
+src/ipc/ExclusiveLockFile.cpp.s:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/ipc/ExclusiveLockFile.cpp.s
+.PHONY : src/ipc/ExclusiveLockFile.cpp.s
 
 src/ipc/Semaforo.o: src/ipc/Semaforo.cpp.o
 
@@ -285,6 +285,33 @@ src/ipc/Semaforo.cpp.s:
 	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/ipc/Semaforo.cpp.s
 .PHONY : src/ipc/Semaforo.cpp.s
 
+src/ipc/SharedLockFile.o: src/ipc/SharedLockFile.cpp.o
+
+.PHONY : src/ipc/SharedLockFile.o
+
+# target to build an object file
+src/ipc/SharedLockFile.cpp.o:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/ipc/SharedLockFile.cpp.o
+.PHONY : src/ipc/SharedLockFile.cpp.o
+
+src/ipc/SharedLockFile.i: src/ipc/SharedLockFile.cpp.i
+
+.PHONY : src/ipc/SharedLockFile.i
+
+# target to preprocess a source file
+src/ipc/SharedLockFile.cpp.i:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/ipc/SharedLockFile.cpp.i
+.PHONY : src/ipc/SharedLockFile.cpp.i
+
+src/ipc/SharedLockFile.s: src/ipc/SharedLockFile.cpp.s
+
+.PHONY : src/ipc/SharedLockFile.s
+
+# target to generate assembly for a file
+src/ipc/SharedLockFile.cpp.s:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/ipc/SharedLockFile.cpp.s
+.PHONY : src/ipc/SharedLockFile.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -306,12 +333,15 @@ help:
 	@echo "... src/Main.o"
 	@echo "... src/Main.i"
 	@echo "... src/Main.s"
-	@echo "... src/ipc/LockFile.o"
-	@echo "... src/ipc/LockFile.i"
-	@echo "... src/ipc/LockFile.s"
+	@echo "... src/ipc/ExclusiveLockFile.o"
+	@echo "... src/ipc/ExclusiveLockFile.i"
+	@echo "... src/ipc/ExclusiveLockFile.s"
 	@echo "... src/ipc/Semaforo.o"
 	@echo "... src/ipc/Semaforo.i"
 	@echo "... src/ipc/Semaforo.s"
+	@echo "... src/ipc/SharedLockFile.o"
+	@echo "... src/ipc/SharedLockFile.i"
+	@echo "... src/ipc/SharedLockFile.s"
 .PHONY : help
 
 

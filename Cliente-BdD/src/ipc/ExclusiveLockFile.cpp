@@ -1,7 +1,7 @@
 
-#include "../../include/ipc/LockFile.h"
+#include "../../include/ipc/ExclusiveLockFile.h"
 
-LockFile :: LockFile ( const string nombre ) {
+ExclusiveLockFile :: ExclusiveLockFile ( const string nombre ) {
 
     this->nombre = nombre;
     this->fl.l_type = F_WRLCK;
@@ -13,30 +13,26 @@ LockFile :: LockFile ( const string nombre ) {
     this->fd = open ( this->nombre.c_str(),O_CREAT|O_WRONLY,0777 );
 }
 
-int LockFile :: tomarLock () {
+int ExclusiveLockFile :: tomarLock () {
     this->fl.l_type = F_WRLCK;
     return fcntl ( this->fd,F_SETLKW,&(this->fl) );
 }
 
-int LockFile :: liberarLock () {
+int ExclusiveLockFile :: liberarLock () {
     this->fl.l_type = F_UNLCK;
     return fcntl ( this->fd,F_SETLK,&(this->fl) );
 }
 
-ssize_t LockFile :: escribir ( const void* buffer,const ssize_t buffsize ) const {
+ssize_t ExclusiveLockFile :: escribir ( const void* buffer,const ssize_t buffsize ) const {
     lseek ( this->fd,0,SEEK_END );
     return write ( this->fd,buffer,buffsize );
 }
 
-ssize_t LockFile :: leer ( void* buffer,const ssize_t buffsize ) const {
-    return read ( this->fd,buffer,buffsize );
-}
-
-LockFile :: ~LockFile () {
+ExclusiveLockFile :: ~ExclusiveLockFile () {
     close ( this->fd );
 }
 
-int LockFile::crearDirectorioSiNoExiste(string rutaCompletaArchivo) {
+int ExclusiveLockFile::crearDirectorioSiNoExiste(string rutaCompletaArchivo) {
     string path = rutaCompletaArchivo.substr(0, rutaCompletaArchivo.find_last_of("\\/"));
     DIR* dir = opendir(path.c_str());
     if (dir) {

@@ -2,29 +2,32 @@
 #include "../include/Conector.h"
 
 Conector::Conector() : conectado (true) {
-    this->lock = new LockFile (archivoTmp);
+    this->writeLock = new ExclusiveLockFile (archivoTmp);
+    this->readLock = new SharedLockFile (archivoTmp);
     initArchivo();
 }
 
 Conector::~Conector() {
     this->conectado = false;
-    delete lock;
+    delete writeLock;
+    delete readLock;
 }
 
 bool Conector::conectar() {
     if (conectado)
         return false;
 
-    this->lock->tomarLock();
+    char numLeido;  // TODO: Esto solo soporta hasta 9 conexiones en simultaneo!
+    this->readLock->tomarLock();
+    this->readLock->leer(&numLeido, 1);
+    this->readLock->liberarLock();
 
-    // TODO: Esto solo soporta hasta 9 conexiones en simultaneo!
-    char numLeido;
-    this->lock->leer(&numLeido, 1);
     int cantClientes = atoi(&numLeido);
     cantClientes++;
-    this->lock->escribir(&cantClientes, 1);
+    this->writeLock->tomarLock();
+    this->writeLock->escribir(&cantClientes, 1);
+    this->writeLock->liberarLock();
 
-    this->lock->liberarLock();
     return true;
 }
 
@@ -32,16 +35,17 @@ bool Conector::desconectar() {
     if (!conectado)
         return false;
 
-    this->lock->tomarLock();
+    char numLeido;  // TODO: Esto solo soporta hasta 9 conexiones en simultaneo!
+    this->readLock->tomarLock();
+    this->readLock->leer(&numLeido, 1);
+    this->readLock->liberarLock();
 
-    // TODO: Esto solo soporta hasta 9 conexiones en simultaneo!
-    char numLeido;
-    this->lock->leer(&numLeido, 1);
     int cantClientes = atoi(&numLeido);
     cantClientes--;
-    this->lock->escribir(&cantClientes, 1);
+    this->writeLock->tomarLock();
+    this->writeLock->escribir(&cantClientes, 1);
+    this->writeLock->liberarLock();
 
-    this->lock->liberarLock();
     return true;
 }
 
@@ -49,27 +53,24 @@ int Conector::nroCliente() {
     if (!conectado)
         return 0;
 
-    this->lock->tomarLock();
-
-    // TODO: Esto solo soporta hasta 9 conexiones en simultaneo!
-    char numLeido;
-    this->lock->leer(&numLeido, 1);
+    char numLeido;  // TODO: Esto solo soporta hasta 9 conexiones en simultaneo!
+    this->readLock->tomarLock();
+    this->readLock->leer(&numLeido, 1);
+    this->readLock->liberarLock();
     int cantClientes = atoi(&numLeido);
-
-    this->lock->liberarLock();
     return cantClientes;
 }
 
 void Conector::initArchivo() {
-    this->lock->tomarLock();
-
-    // TODO: Esto solo soporta hasta 9 conexiones en simultaneo!
-    char numLeido;
-    int bytesLeidos = (int) this->lock->leer(&numLeido, 1);
+    char numLeido;  // TODO: Esto solo soporta hasta 9 conexiones en simultaneo!
+    this->readLock->tomarLock();
+    int bytesLeidos = (int) this->readLock->leer(&numLeido, 1);
+    this->readLock->liberarLock();
     if (bytesLeidos == 0) {
         int cantClientesInit = 0;
-        this->lock->escribir(&cantClientesInit, 1);
+        this->writeLock->tomarLock();
+        this->writeLock->escribir(&cantClientesInit, 1);
+        this->writeLock->liberarLock();
     }
-    this->lock->liberarLock();
 }
 

@@ -1,6 +1,6 @@
 
-#ifndef CLIENTE_BDD_LOCKFILE_H
-#define CLIENTE_BDD_LOCKFILE_H
+#ifndef CLIENTE_BDD_SHAREDLOCKFILE_H
+#define CLIENTE_BDD_SHAREDLOCKFILE_H
 
 #include <unistd.h>
 #include <fcntl.h>
@@ -10,7 +10,7 @@
 
 using namespace std;
 
-class LockFile {
+class SharedLockFile {
 
 private:
     struct flock fl;
@@ -20,14 +20,14 @@ private:
     int crearDirectorioSiNoExiste (string rutaCompletaArchivo);
 
 public:
-    LockFile ( const string nombre );
-    ~LockFile();
+    SharedLockFile ( const string nombre );
+    ~SharedLockFile ();
 
     int tomarLock ();
     int liberarLock ();
-    ssize_t escribir ( const void* buffer,const ssize_t buffsize ) const;
     ssize_t leer ( void* buffer,const ssize_t buffsize ) const;
+
 };
 
 
-#endif //CLIENTE_BDD_LOCKFILE_H
+#endif //CLIENTE_BDD_SHAREDLOCKFILE_H

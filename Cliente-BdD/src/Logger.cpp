@@ -22,7 +22,7 @@ Logger* Logger::getInstance() {
 }
 
 ssize_t Logger::escribir ( string modo, string tag, string msg ) {
-    LockFile lock (ARCHIVO_BITACORA);
+    ExclusiveLockFile lock (ARCHIVO_BITACORA);
     lock.tomarLock();
 
     const string log = fechaActual() + " [" + modo + "] - " + tag + ": " + msg + "\n";

@@ -3,14 +3,16 @@
 #define CLIENTE_BDD_CONECTOR_H
 
 
-#include "ipc/LockFile.h"
+#include "ipc/ExclusiveLockFile.h"
+#include "ipc/SharedLockFile.h"
 
 class Conector {
 
 private:
     bool conectado;
     const char* archivoTmp = "../../tmp/cantClientes.txt";
-    LockFile* lock;
+    ExclusiveLockFile* writeLock;
+    SharedLockFile* readLock;
 
     void initArchivo();
 

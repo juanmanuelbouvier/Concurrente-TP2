@@ -99,13 +99,16 @@
 		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/include/ipc/Cola.h">
 			<Option target="Cliente_BdD"/>
 		</Unit>
-		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/include/ipc/LockFile.h">
+		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/include/ipc/ExclusiveLockFile.h">
 			<Option target="Cliente_BdD"/>
 		</Unit>
 		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/include/ipc/MemoriaCompartida.h">
 			<Option target="Cliente_BdD"/>
 		</Unit>
 		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/include/ipc/Semaforo.h">
+			<Option target="Cliente_BdD"/>
+		</Unit>
+		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/include/ipc/SharedLockFile.h">
 			<Option target="Cliente_BdD"/>
 		</Unit>
 		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/src/BdD.cpp">
@@ -120,10 +123,13 @@
 		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/src/Main.cpp">
 			<Option target="Cliente_BdD"/>
 		</Unit>
-		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/src/ipc/LockFile.cpp">
+		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/src/ipc/ExclusiveLockFile.cpp">
 			<Option target="Cliente_BdD"/>
 		</Unit>
 		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/src/ipc/Semaforo.cpp">
+			<Option target="Cliente_BdD"/>
+		</Unit>
+		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/src/ipc/SharedLockFile.cpp">
 			<Option target="Cliente_BdD"/>
 		</Unit>
 		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/CMakeLists.txt">

@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <ctime>
 
-#include "ipc/LockFile.h"
+#include "ipc/ExclusiveLockFile.h"
 
 using namespace std;
 

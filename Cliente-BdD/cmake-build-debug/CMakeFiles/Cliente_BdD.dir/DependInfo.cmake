@@ -8,8 +8,9 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/src/Conector.cpp" "/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/cmake-build-debug/CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.o"
   "/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/src/Logger.cpp" "/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/cmake-build-debug/CMakeFiles/Cliente_BdD.dir/src/Logger.cpp.o"
   "/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/src/Main.cpp" "/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/cmake-build-debug/CMakeFiles/Cliente_BdD.dir/src/Main.cpp.o"
-  "/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/src/ipc/LockFile.cpp" "/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/cmake-build-debug/CMakeFiles/Cliente_BdD.dir/src/ipc/LockFile.cpp.o"
+  "/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/src/ipc/ExclusiveLockFile.cpp" "/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/cmake-build-debug/CMakeFiles/Cliente_BdD.dir/src/ipc/ExclusiveLockFile.cpp.o"
   "/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/src/ipc/Semaforo.cpp" "/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/cmake-build-debug/CMakeFiles/Cliente_BdD.dir/src/ipc/Semaforo.cpp.o"
+  "/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/src/ipc/SharedLockFile.cpp" "/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Cliente-BdD/cmake-build-debug/CMakeFiles/Cliente_BdD.dir/src/ipc/SharedLockFile.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
