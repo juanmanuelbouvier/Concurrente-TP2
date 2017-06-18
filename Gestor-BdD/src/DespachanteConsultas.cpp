@@ -21,14 +21,16 @@ void DespachanteConsultas::despachar() {
             for (int i = 0; i < respuesta.size(); i++) {
                 Persona aEncolar = respuesta.at(i);
                 aEncolar.mtype = consulta.mtype;
+                aEncolar.esUnicoResultado = 1;
                 this->consultas->escribir( aEncolar );
+                Logger :: getInstance() -> info( "Gestor", "Resultado de Búsqueda encolado" );
             }
-            Logger :: getInstance() -> info( "Gestor", "Consulta de busqueda resuelta" );
+            //Logger :: getInstance() -> info( "Gestor", "Consulta de busqueda resuelta" );
         } else if (consulta.tipoConsulta == INSERCION) {
             Insertor insertor = Insertor();
             insertor.insertar(consulta);
             this->consultas->escribir( consulta );  // Devuelvo lo mismo como confirmacion de que ya se persistio el dato.
-            Logger :: getInstance() -> info( "Gestor", "Consulta de insercion resuelta" );
+            //Logger :: getInstance() -> info( "Gestor", "Consulta de insercion resuelta" );
         }
         exit(0);
     }

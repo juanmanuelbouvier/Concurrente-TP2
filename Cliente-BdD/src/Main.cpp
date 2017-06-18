@@ -66,8 +66,14 @@ int main() {
                 cout << "PERSONA BUSCADA: " << personaBuscar.nombre << " DIR: " <<
                      personaBuscar.direccion << " TEL: "<< personaBuscar.telefono << endl;
 
-                //vector<Persona> resultado;
-                //resultado = bdd->buscar(personaBuscar);
+                vector<Persona>* resultado;
+                resultado = bdd->buscar(personaBuscar);
+                for (int i = 0; i < resultado->size(); i++){
+                    Persona persona = resultado->at(i);
+                    cout << "Se han encontrado los siguientes resultados:" << endl;
+                    cout << "Nombre: " << persona.nombre << " - Direccion: " <<
+                         persona.direccion << " - Telefono: "<< persona.telefono << endl;
+                }
                 break;
 
             case (SALIR):
