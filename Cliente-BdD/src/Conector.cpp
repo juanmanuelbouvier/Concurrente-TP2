@@ -1,4 +1,5 @@
 
+#include <iostream>
 #include "../include/Conector.h"
 
 Conector::Conector() : conectado (false) {
@@ -48,7 +49,7 @@ void Conector::initArchivo() {
 
 int Conector :: leerNumero () {
     SharedLockFile readLock = SharedLockFile (archivoTmp);
-    int numLeido;
+    int numLeido = 0;
     readLock.tomarLock();
     readLock.leer(&numLeido, sizeof(int));
     readLock.liberarLock();
