@@ -8,6 +8,7 @@
 # User-specific stuff:
 .idea/
 logs/
+tmp/
 
 # CMake
 cmake-build-debug/
