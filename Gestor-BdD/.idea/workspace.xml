@@ -34,7 +34,8 @@
   <component name="ChangeListManager">
     <list default="true" id="93dd7445-aa2c-4904-be54-c44dc4f56165" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cliente-BdD/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Cliente-BdD/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cliente-BdD/src/ipc/SharedLockFile.cpp" afterPath="$PROJECT_DIR$/../Cliente-BdD/src/ipc/SharedLockFile.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cliente-BdD/include/Persona.h" afterPath="$PROJECT_DIR$/../Cliente-BdD/include/Persona.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cliente-BdD/src/BdD.cpp" afterPath="$PROJECT_DIR$/../Cliente-BdD/src/BdD.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -51,7 +52,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Persona.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Persona.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/Persona.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
@@ -61,14 +62,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Semaforo.h" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Semaforo.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/include/ipc/Semaforo.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding>
-                <element signature="e#62#82#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="72">
+              <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -411,7 +410,7 @@
       <updated>1497716275997</updated>
       <workItem from="1497716277335" duration="43000" />
       <workItem from="1497719157641" duration="4549000" />
-      <workItem from="1497794890857" duration="677000" />
+      <workItem from="1497794890857" duration="1216000" />
     </task>
     <task id="LOCAL-00001" summary="Agrego struct Persona al gestor">
       <created>1497719250955</created>
@@ -452,7 +451,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5269000" />
+    <option name="totallyTimeSpent" value="5808000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1853" y="24" width="1853" height="1056" extended-state="6" />
@@ -528,16 +527,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/ipc/Semaforo.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="e#62#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/Logger.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
@@ -576,6 +565,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/ipc/Semaforo.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
           <folding />
         </state>
       </provider>

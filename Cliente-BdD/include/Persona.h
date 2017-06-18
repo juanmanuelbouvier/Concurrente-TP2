@@ -6,11 +6,15 @@
 #define MAX_DIRECCION   120
 #define MAX_TELEFONO    13
 
+static const int BUSQUEDA = 0;
+static const int INSERCION = 1;
+
 typedef struct Persona {
     long mtype;
     char nombre [MAX_NOMBRE];
     char direccion [MAX_DIRECCION];
     char telefono [MAX_TELEFONO];
+    int tipoConsulta;
     bool esUnicoResultado;
 } Persona;
 
