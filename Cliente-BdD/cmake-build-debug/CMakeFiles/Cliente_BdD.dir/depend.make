@@ -8,13 +8,20 @@ CMakeFiles/Cliente_BdD.dir/src/BdD.cpp.o: ../include/ipc/MemoriaCompartida.h
 CMakeFiles/Cliente_BdD.dir/src/BdD.cpp.o: ../src/BdD.cpp
 
 CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.o: ../include/Conector.h
-CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.o: ../include/ipc/LockFIle.h
+CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.o: ../include/ipc/LockFile.h
 CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.o: ../src/Conector.cpp
 
+CMakeFiles/Cliente_BdD.dir/src/Logger.cpp.o: ../include/Logger.h
+CMakeFiles/Cliente_BdD.dir/src/Logger.cpp.o: ../include/ipc/LockFile.h
+CMakeFiles/Cliente_BdD.dir/src/Logger.cpp.o: ../src/Logger.cpp
+
+CMakeFiles/Cliente_BdD.dir/src/Main.cpp.o: ../include/Conector.h
+CMakeFiles/Cliente_BdD.dir/src/Main.cpp.o: ../include/Logger.h
+CMakeFiles/Cliente_BdD.dir/src/Main.cpp.o: ../include/ipc/LockFile.h
 CMakeFiles/Cliente_BdD.dir/src/Main.cpp.o: ../src/Main.cpp
 
-CMakeFiles/Cliente_BdD.dir/src/ipc/LockFIle.cpp.o: ../include/ipc/LockFIle.h
-CMakeFiles/Cliente_BdD.dir/src/ipc/LockFIle.cpp.o: ../src/ipc/LockFIle.cpp
+CMakeFiles/Cliente_BdD.dir/src/ipc/LockFile.cpp.o: ../include/ipc/LockFile.h
+CMakeFiles/Cliente_BdD.dir/src/ipc/LockFile.cpp.o: ../src/ipc/LockFile.cpp
 
 CMakeFiles/Cliente_BdD.dir/src/ipc/Semaforo.cpp.o: ../include/ipc/Semaforo.h
 CMakeFiles/Cliente_BdD.dir/src/ipc/Semaforo.cpp.o: ../src/ipc/Semaforo.cpp

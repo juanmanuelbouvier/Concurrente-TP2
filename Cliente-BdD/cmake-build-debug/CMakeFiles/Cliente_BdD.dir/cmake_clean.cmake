@@ -3,7 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Cliente_BdD.dir/src/ipc/Semaforo.cpp.o"
   "CMakeFiles/Cliente_BdD.dir/src/BdD.cpp.o"
   "CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.o"
-  "CMakeFiles/Cliente_BdD.dir/src/ipc/LockFIle.cpp.o"
+  "CMakeFiles/Cliente_BdD.dir/src/ipc/LockFile.cpp.o"
+  "CMakeFiles/Cliente_BdD.dir/src/Logger.cpp.o"
   "Cliente_BdD.pdb"
   "Cliente_BdD"
 )

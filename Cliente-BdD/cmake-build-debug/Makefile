@@ -177,6 +177,33 @@ src/Conector.cpp.s:
 	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/Conector.cpp.s
 .PHONY : src/Conector.cpp.s
 
+src/Logger.o: src/Logger.cpp.o
+
+.PHONY : src/Logger.o
+
+# target to build an object file
+src/Logger.cpp.o:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/Logger.cpp.o
+.PHONY : src/Logger.cpp.o
+
+src/Logger.i: src/Logger.cpp.i
+
+.PHONY : src/Logger.i
+
+# target to preprocess a source file
+src/Logger.cpp.i:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/Logger.cpp.i
+.PHONY : src/Logger.cpp.i
+
+src/Logger.s: src/Logger.cpp.s
+
+.PHONY : src/Logger.s
+
+# target to generate assembly for a file
+src/Logger.cpp.s:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/Logger.cpp.s
+.PHONY : src/Logger.cpp.s
+
 src/Main.o: src/Main.cpp.o
 
 .PHONY : src/Main.o
@@ -204,32 +231,32 @@ src/Main.cpp.s:
 	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/Main.cpp.s
 .PHONY : src/Main.cpp.s
 
-src/ipc/LockFIle.o: src/ipc/LockFIle.cpp.o
+src/ipc/LockFile.o: src/ipc/LockFile.cpp.o
 
-.PHONY : src/ipc/LockFIle.o
+.PHONY : src/ipc/LockFile.o
 
 # target to build an object file
-src/ipc/LockFIle.cpp.o:
-	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/ipc/LockFIle.cpp.o
-.PHONY : src/ipc/LockFIle.cpp.o
+src/ipc/LockFile.cpp.o:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/ipc/LockFile.cpp.o
+.PHONY : src/ipc/LockFile.cpp.o
 
-src/ipc/LockFIle.i: src/ipc/LockFIle.cpp.i
+src/ipc/LockFile.i: src/ipc/LockFile.cpp.i
 
-.PHONY : src/ipc/LockFIle.i
+.PHONY : src/ipc/LockFile.i
 
 # target to preprocess a source file
-src/ipc/LockFIle.cpp.i:
-	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/ipc/LockFIle.cpp.i
-.PHONY : src/ipc/LockFIle.cpp.i
+src/ipc/LockFile.cpp.i:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/ipc/LockFile.cpp.i
+.PHONY : src/ipc/LockFile.cpp.i
 
-src/ipc/LockFIle.s: src/ipc/LockFIle.cpp.s
+src/ipc/LockFile.s: src/ipc/LockFile.cpp.s
 
-.PHONY : src/ipc/LockFIle.s
+.PHONY : src/ipc/LockFile.s
 
 # target to generate assembly for a file
-src/ipc/LockFIle.cpp.s:
-	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/ipc/LockFIle.cpp.s
-.PHONY : src/ipc/LockFIle.cpp.s
+src/ipc/LockFile.cpp.s:
+	$(MAKE) -f CMakeFiles/Cliente_BdD.dir/build.make CMakeFiles/Cliente_BdD.dir/src/ipc/LockFile.cpp.s
+.PHONY : src/ipc/LockFile.cpp.s
 
 src/ipc/Semaforo.o: src/ipc/Semaforo.cpp.o
 
@@ -273,12 +300,15 @@ help:
 	@echo "... src/Conector.o"
 	@echo "... src/Conector.i"
 	@echo "... src/Conector.s"
+	@echo "... src/Logger.o"
+	@echo "... src/Logger.i"
+	@echo "... src/Logger.s"
 	@echo "... src/Main.o"
 	@echo "... src/Main.i"
 	@echo "... src/Main.s"
-	@echo "... src/ipc/LockFIle.o"
-	@echo "... src/ipc/LockFIle.i"
-	@echo "... src/ipc/LockFIle.s"
+	@echo "... src/ipc/LockFile.o"
+	@echo "... src/ipc/LockFile.i"
+	@echo "... src/ipc/LockFile.s"
 	@echo "... src/ipc/Semaforo.o"
 	@echo "... src/ipc/Semaforo.i"
 	@echo "... src/ipc/Semaforo.s"

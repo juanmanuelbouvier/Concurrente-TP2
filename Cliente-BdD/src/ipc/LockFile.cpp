@@ -1,5 +1,5 @@
 
-#include "../../include/ipc/LockFIle.h"
+#include "../../include/ipc/LockFile.h"
 
 LockFile :: LockFile ( const string nombre ) {
 

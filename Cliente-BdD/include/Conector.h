@@ -3,7 +3,7 @@
 #define CLIENTE_BDD_CONECTOR_H
 
 
-#include "ipc/LockFIle.h"
+#include "ipc/LockFile.h"
 
 class Conector {
 

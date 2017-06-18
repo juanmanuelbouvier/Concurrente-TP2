@@ -72,3 +72,4 @@ void Conector::initArchivo() {
     }
     this->lock->liberarLock();
 }
+
