@@ -3,5 +3,5 @@ project(Gestor_BdD)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES src/Main.cpp include/ipc/Cola.h include/Persona.h src/ipc/Semaforo.cpp include/ipc/Semaforo.h src/Logger.cpp include/Logger.h src/ipc/ExclusiveLockFile.cpp include/ipc/ExclusiveLockFile.h)
+set(SOURCE_FILES src/Main.cpp include/ipc/Cola.h include/Persona.h src/ipc/Semaforo.cpp include/ipc/Semaforo.h src/Logger.cpp include/Logger.h src/ipc/ExclusiveLockFile.cpp include/ipc/ExclusiveLockFile.h src/DespachanteConsultas.cpp include/DespachanteConsultas.h src/Buscador.cpp include/Buscador.h src/ipc/SharedLockFile.cpp include/ipc/SharedLockFile.h src/Insertor.cpp include/Insertor.h)
 add_executable(Gestor_BdD ${SOURCE_FILES})

@@ -123,6 +123,87 @@ Gestor_BdD/fast:
 	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/build
 .PHONY : Gestor_BdD/fast
 
+src/Buscador.o: src/Buscador.cpp.o
+
+.PHONY : src/Buscador.o
+
+# target to build an object file
+src/Buscador.cpp.o:
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.o
+.PHONY : src/Buscador.cpp.o
+
+src/Buscador.i: src/Buscador.cpp.i
+
+.PHONY : src/Buscador.i
+
+# target to preprocess a source file
+src/Buscador.cpp.i:
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.i
+.PHONY : src/Buscador.cpp.i
+
+src/Buscador.s: src/Buscador.cpp.s
+
+.PHONY : src/Buscador.s
+
+# target to generate assembly for a file
+src/Buscador.cpp.s:
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.s
+.PHONY : src/Buscador.cpp.s
+
+src/DespachanteConsultas.o: src/DespachanteConsultas.cpp.o
+
+.PHONY : src/DespachanteConsultas.o
+
+# target to build an object file
+src/DespachanteConsultas.cpp.o:
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.o
+.PHONY : src/DespachanteConsultas.cpp.o
+
+src/DespachanteConsultas.i: src/DespachanteConsultas.cpp.i
+
+.PHONY : src/DespachanteConsultas.i
+
+# target to preprocess a source file
+src/DespachanteConsultas.cpp.i:
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.i
+.PHONY : src/DespachanteConsultas.cpp.i
+
+src/DespachanteConsultas.s: src/DespachanteConsultas.cpp.s
+
+.PHONY : src/DespachanteConsultas.s
+
+# target to generate assembly for a file
+src/DespachanteConsultas.cpp.s:
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.s
+.PHONY : src/DespachanteConsultas.cpp.s
+
+src/Insertor.o: src/Insertor.cpp.o
+
+.PHONY : src/Insertor.o
+
+# target to build an object file
+src/Insertor.cpp.o:
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.o
+.PHONY : src/Insertor.cpp.o
+
+src/Insertor.i: src/Insertor.cpp.i
+
+.PHONY : src/Insertor.i
+
+# target to preprocess a source file
+src/Insertor.cpp.i:
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.i
+.PHONY : src/Insertor.cpp.i
+
+src/Insertor.s: src/Insertor.cpp.s
+
+.PHONY : src/Insertor.s
+
+# target to generate assembly for a file
+src/Insertor.cpp.s:
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.s
+.PHONY : src/Insertor.cpp.s
+
 src/Logger.o: src/Logger.cpp.o
 
 .PHONY : src/Logger.o
@@ -231,6 +312,33 @@ src/ipc/Semaforo.cpp.s:
 	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/ipc/Semaforo.cpp.s
 .PHONY : src/ipc/Semaforo.cpp.s
 
+src/ipc/SharedLockFile.o: src/ipc/SharedLockFile.cpp.o
+
+.PHONY : src/ipc/SharedLockFile.o
+
+# target to build an object file
+src/ipc/SharedLockFile.cpp.o:
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/ipc/SharedLockFile.cpp.o
+.PHONY : src/ipc/SharedLockFile.cpp.o
+
+src/ipc/SharedLockFile.i: src/ipc/SharedLockFile.cpp.i
+
+.PHONY : src/ipc/SharedLockFile.i
+
+# target to preprocess a source file
+src/ipc/SharedLockFile.cpp.i:
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/ipc/SharedLockFile.cpp.i
+.PHONY : src/ipc/SharedLockFile.cpp.i
+
+src/ipc/SharedLockFile.s: src/ipc/SharedLockFile.cpp.s
+
+.PHONY : src/ipc/SharedLockFile.s
+
+# target to generate assembly for a file
+src/ipc/SharedLockFile.cpp.s:
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/ipc/SharedLockFile.cpp.s
+.PHONY : src/ipc/SharedLockFile.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -240,6 +348,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Gestor_BdD"
+	@echo "... src/Buscador.o"
+	@echo "... src/Buscador.i"
+	@echo "... src/Buscador.s"
+	@echo "... src/DespachanteConsultas.o"
+	@echo "... src/DespachanteConsultas.i"
+	@echo "... src/DespachanteConsultas.s"
+	@echo "... src/Insertor.o"
+	@echo "... src/Insertor.i"
+	@echo "... src/Insertor.s"
 	@echo "... src/Logger.o"
 	@echo "... src/Logger.i"
 	@echo "... src/Logger.s"
@@ -252,6 +369,9 @@ help:
 	@echo "... src/ipc/Semaforo.o"
 	@echo "... src/ipc/Semaforo.i"
 	@echo "... src/ipc/Semaforo.s"
+	@echo "... src/ipc/SharedLockFile.o"
+	@echo "... src/ipc/SharedLockFile.i"
+	@echo "... src/ipc/SharedLockFile.s"
 .PHONY : help
 
 

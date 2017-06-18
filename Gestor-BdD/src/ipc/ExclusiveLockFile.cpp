@@ -46,4 +46,5 @@ int ExclusiveLockFile::crearDirectorioSiNoExiste(string rutaCompletaArchivo) {
     else if (ENOENT == errno) {
         return mkdir(path.c_str(), 0777);
     }
+    return -1;
 }

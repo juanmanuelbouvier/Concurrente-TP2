@@ -33,9 +33,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93dd7445-aa2c-4904-be54-c44dc4f56165" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/include/Buscador.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/include/DespachanteConsultas.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/include/Insertor.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/include/ipc/SharedLockFile.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Buscador.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DespachanteConsultas.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Insertor.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ipc/SharedLockFile.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cliente-BdD/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Cliente-BdD/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Persona.h" afterPath="$PROJECT_DIR$/include/Persona.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Gestor_BdD.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Gestor_BdD.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Gestor_BdD.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Gestor_BdD.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Gestor_BdD.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Gestor_BdD.dir/cmake_clean.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Gestor_BdD.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Gestor_BdD.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Gestor_BdD.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Gestor_BdD.dir/link.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Gestor_BdD.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Gestor_BdD.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Gestor_BdD.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/Gestor_BdD.cbp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ipc/ExclusiveLockFile.cpp" afterPath="$PROJECT_DIR$/src/ipc/ExclusiveLockFile.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,7 +70,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Persona.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Persona.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/Persona.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
@@ -61,17 +80,76 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="DespachanteConsultas.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DespachanteConsultas.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="28" column="122" lean-forward="false" selection-start-line="28" selection-start-column="122" selection-end-line="28" selection-end-column="122" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DespachanteConsultas.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/DespachanteConsultas.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <element signature="e#86#105#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Buscador.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Buscador.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Buscador.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/Buscador.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+              <folding>
+                <element signature="e#63#80#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Insertor.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/Insertor.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Semaforo.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/ipc/Semaforo.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
-              <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+              <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>operator[</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="UPDATE_CHANGES_POLICY" value="SHELVE" />
@@ -86,8 +164,16 @@
         <option value="$PROJECT_DIR$/include/Logger.h" />
         <option value="$PROJECT_DIR$/src/Logger.cpp" />
         <option value="$PROJECT_DIR$/include/ipc/ExclusiveLockFile.h" />
-        <option value="$PROJECT_DIR$/src/ipc/ExclusiveLockFile.cpp" />
         <option value="$PROJECT_DIR$/include/Persona.h" />
+        <option value="$PROJECT_DIR$/include/ipc/SharedLockFile.h" />
+        <option value="$PROJECT_DIR$/src/ipc/SharedLockFile.cpp" />
+        <option value="$PROJECT_DIR$/src/ipc/ExclusiveLockFile.cpp" />
+        <option value="$PROJECT_DIR$/include/Buscador.h" />
+        <option value="$PROJECT_DIR$/src/Buscador.cpp" />
+        <option value="$PROJECT_DIR$/include/Insertor.h" />
+        <option value="$PROJECT_DIR$/src/Insertor.cpp" />
+        <option value="$PROJECT_DIR$/include/DespachanteConsultas.h" />
+        <option value="$PROJECT_DIR$/src/DespachanteConsultas.cpp" />
       </list>
     </option>
   </component>
@@ -212,8 +298,9 @@
       <recent name="$PROJECT_DIR$/include" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/ipc" />
       <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/ipc" />
+      <recent name="$PROJECT_DIR$/include" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Gestor_BdD">
@@ -409,7 +496,7 @@
       <updated>1497716275997</updated>
       <workItem from="1497716277335" duration="43000" />
       <workItem from="1497719157641" duration="4549000" />
-      <workItem from="1497794890857" duration="1341000" />
+      <workItem from="1497794890857" duration="4696000" />
     </task>
     <task id="LOCAL-00001" summary="Agrego struct Persona al gestor">
       <created>1497719250955</created>
@@ -446,11 +533,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497795532156</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="agrego campo tipoConsulta de persona tmb en gestor">
+      <created>1497796245638</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1497796245638</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5933000" />
+    <option name="totallyTimeSpent" value="9288000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="24" width="1853" height="1056" extended-state="6" />
@@ -463,7 +557,7 @@
       <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -489,7 +583,8 @@
     <MESSAGE value="Cambio struct de persona a tener cadenas de texto en lugar de punteros a ellas" />
     <MESSAGE value="cambio boolean en persona por bool (nativo)" />
     <MESSAGE value="Agrego exclusive locker y logger al gestor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Agrego exclusive locker y logger al gestor" />
+    <MESSAGE value="agrego campo tipoConsulta de persona tmb en gestor" />
+    <option name="LAST_COMMIT_MESSAGE" value="agrego campo tipoConsulta de persona tmb en gestor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -534,14 +629,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ipc/ExclusiveLockFile.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="48" column="1" lean-forward="false" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Logger.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1062">
@@ -555,7 +642,7 @@
         <state relative-caret-position="522">
           <caret line="29" column="2" lean-forward="false" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
           <folding>
-            <element signature="e#80#99#0" expanded="true" />
+            <element signature="e#80#99#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -563,7 +650,7 @@
     <entry file="file://$PROJECT_DIR$/include/ipc/Semaforo.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -572,6 +659,102 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/ipc/Cola.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="47" column="38" lean-forward="false" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+          <folding>
+            <element signature="e#1261#1270#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/ipc/SharedLockFile.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="2" lean-forward="false" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+          <folding>
+            <element signature="e#74#93#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ipc/SharedLockFile.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="42" column="14" lean-forward="false" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ipc/ExclusiveLockFile.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="48" column="14" lean-forward="false" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/5/bits/stl_vector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="778" column="15" lean-forward="false" selection-start-line="778" selection-start-column="6" selection-end-line="778" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Insertor.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Insertor.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="70" lean-forward="false" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Buscador.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding>
+            <element signature="e#63#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Buscador.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/DespachanteConsultas.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#86#105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DespachanteConsultas.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="122" lean-forward="false" selection-start-line="28" selection-start-column="122" selection-end-line="28" selection-end-column="122" />
           <folding />
         </state>
       </provider>

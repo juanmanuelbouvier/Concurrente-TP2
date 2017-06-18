@@ -153,12 +153,112 @@ CMakeFiles/Gestor_BdD.dir/src/ipc/ExclusiveLockFile.cpp.o.provides: CMakeFiles/G
 CMakeFiles/Gestor_BdD.dir/src/ipc/ExclusiveLockFile.cpp.o.provides.build: CMakeFiles/Gestor_BdD.dir/src/ipc/ExclusiveLockFile.cpp.o
 
 
+CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.o: CMakeFiles/Gestor_BdD.dir/flags.make
+CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.o: ../src/DespachanteConsultas.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.o -c /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/DespachanteConsultas.cpp
+
+CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/DespachanteConsultas.cpp > CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.i
+
+CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/DespachanteConsultas.cpp -o CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.s
+
+CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.o.requires:
+
+.PHONY : CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.o.requires
+
+CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.o.provides: CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.o.provides.build
+.PHONY : CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.o.provides
+
+CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.o.provides.build: CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.o
+
+
+CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.o: CMakeFiles/Gestor_BdD.dir/flags.make
+CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.o: ../src/Buscador.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.o -c /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/Buscador.cpp
+
+CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/Buscador.cpp > CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.i
+
+CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/Buscador.cpp -o CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.s
+
+CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.o.requires:
+
+.PHONY : CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.o.requires
+
+CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.o.provides: CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.o.provides.build
+.PHONY : CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.o.provides
+
+CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.o.provides.build: CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.o
+
+
+CMakeFiles/Gestor_BdD.dir/src/ipc/SharedLockFile.cpp.o: CMakeFiles/Gestor_BdD.dir/flags.make
+CMakeFiles/Gestor_BdD.dir/src/ipc/SharedLockFile.cpp.o: ../src/ipc/SharedLockFile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Gestor_BdD.dir/src/ipc/SharedLockFile.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Gestor_BdD.dir/src/ipc/SharedLockFile.cpp.o -c /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/ipc/SharedLockFile.cpp
+
+CMakeFiles/Gestor_BdD.dir/src/ipc/SharedLockFile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gestor_BdD.dir/src/ipc/SharedLockFile.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/ipc/SharedLockFile.cpp > CMakeFiles/Gestor_BdD.dir/src/ipc/SharedLockFile.cpp.i
+
+CMakeFiles/Gestor_BdD.dir/src/ipc/SharedLockFile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gestor_BdD.dir/src/ipc/SharedLockFile.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/ipc/SharedLockFile.cpp -o CMakeFiles/Gestor_BdD.dir/src/ipc/SharedLockFile.cpp.s
+
+CMakeFiles/Gestor_BdD.dir/src/ipc/SharedLockFile.cpp.o.requires:
+
+.PHONY : CMakeFiles/Gestor_BdD.dir/src/ipc/SharedLockFile.cpp.o.requires
+
+CMakeFiles/Gestor_BdD.dir/src/ipc/SharedLockFile.cpp.o.provides: CMakeFiles/Gestor_BdD.dir/src/ipc/SharedLockFile.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/ipc/SharedLockFile.cpp.o.provides.build
+.PHONY : CMakeFiles/Gestor_BdD.dir/src/ipc/SharedLockFile.cpp.o.provides
+
+CMakeFiles/Gestor_BdD.dir/src/ipc/SharedLockFile.cpp.o.provides.build: CMakeFiles/Gestor_BdD.dir/src/ipc/SharedLockFile.cpp.o
+
+
+CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.o: CMakeFiles/Gestor_BdD.dir/flags.make
+CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.o: ../src/Insertor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.o -c /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/Insertor.cpp
+
+CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/Insertor.cpp > CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.i
+
+CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/Insertor.cpp -o CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.s
+
+CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.o.requires:
+
+.PHONY : CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.o.requires
+
+CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.o.provides: CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.o.provides.build
+.PHONY : CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.o.provides
+
+CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.o.provides.build: CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.o
+
+
 # Object files for target Gestor_BdD
 Gestor_BdD_OBJECTS = \
 "CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o" \
 "CMakeFiles/Gestor_BdD.dir/src/ipc/Semaforo.cpp.o" \
 "CMakeFiles/Gestor_BdD.dir/src/Logger.cpp.o" \
-"CMakeFiles/Gestor_BdD.dir/src/ipc/ExclusiveLockFile.cpp.o"
+"CMakeFiles/Gestor_BdD.dir/src/ipc/ExclusiveLockFile.cpp.o" \
+"CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.o" \
+"CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.o" \
+"CMakeFiles/Gestor_BdD.dir/src/ipc/SharedLockFile.cpp.o" \
+"CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.o"
 
 # External object files for target Gestor_BdD
 Gestor_BdD_EXTERNAL_OBJECTS =
@@ -167,9 +267,13 @@ Gestor_BdD: CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o
 Gestor_BdD: CMakeFiles/Gestor_BdD.dir/src/ipc/Semaforo.cpp.o
 Gestor_BdD: CMakeFiles/Gestor_BdD.dir/src/Logger.cpp.o
 Gestor_BdD: CMakeFiles/Gestor_BdD.dir/src/ipc/ExclusiveLockFile.cpp.o
+Gestor_BdD: CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.o
+Gestor_BdD: CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.o
+Gestor_BdD: CMakeFiles/Gestor_BdD.dir/src/ipc/SharedLockFile.cpp.o
+Gestor_BdD: CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.o
 Gestor_BdD: CMakeFiles/Gestor_BdD.dir/build.make
 Gestor_BdD: CMakeFiles/Gestor_BdD.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Gestor_BdD"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable Gestor_BdD"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Gestor_BdD.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -181,6 +285,10 @@ CMakeFiles/Gestor_BdD.dir/requires: CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o.req
 CMakeFiles/Gestor_BdD.dir/requires: CMakeFiles/Gestor_BdD.dir/src/ipc/Semaforo.cpp.o.requires
 CMakeFiles/Gestor_BdD.dir/requires: CMakeFiles/Gestor_BdD.dir/src/Logger.cpp.o.requires
 CMakeFiles/Gestor_BdD.dir/requires: CMakeFiles/Gestor_BdD.dir/src/ipc/ExclusiveLockFile.cpp.o.requires
+CMakeFiles/Gestor_BdD.dir/requires: CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.o.requires
+CMakeFiles/Gestor_BdD.dir/requires: CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.o.requires
+CMakeFiles/Gestor_BdD.dir/requires: CMakeFiles/Gestor_BdD.dir/src/ipc/SharedLockFile.cpp.o.requires
+CMakeFiles/Gestor_BdD.dir/requires: CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.o.requires
 
 .PHONY : CMakeFiles/Gestor_BdD.dir/requires
 
