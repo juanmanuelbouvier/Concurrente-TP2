@@ -3,7 +3,6 @@
 #include "../include/Conector.h"
 
 Conector::Conector() : conectado (false) {
-    initArchivo();
 }
 
 Conector::~Conector() {
@@ -37,14 +36,6 @@ int Conector::nroCliente() {
         return 0;
 
     return leerNumero();
-}
-
-void Conector::initArchivo() {
-    int numLeido = leerNumero();
-    if (numLeido <= 0) {
-        int cantClientesInit = 0;
-        escribirNumero(cantClientesInit);
-    }
 }
 
 int Conector :: leerNumero () {

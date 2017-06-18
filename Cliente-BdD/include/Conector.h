@@ -12,7 +12,6 @@ private:
     bool conectado;
     const char* archivoTmp = "../../tmp/cantClientes.txt";
 
-    void initArchivo();
     int leerNumero ();
     void escribirNumero (const int nro);
 
