@@ -66,7 +66,7 @@ void Conector::initArchivo() {
     this->readLock->tomarLock();
     int bytesLeidos = (int) this->readLock->leer(&numLeido, 1);
     this->readLock->liberarLock();
-    if (bytesLeidos == 0) {
+    if (bytesLeidos <= 0) {
         int cantClientesInit = 0;
         this->writeLock->tomarLock();
         this->writeLock->escribir(&cantClientesInit, 1);
