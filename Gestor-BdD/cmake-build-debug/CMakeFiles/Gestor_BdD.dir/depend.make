@@ -22,6 +22,14 @@ CMakeFiles/Gestor_BdD.dir/src/Logger.cpp.o: ../include/Logger.h
 CMakeFiles/Gestor_BdD.dir/src/Logger.cpp.o: ../include/ipc/ExclusiveLockFile.h
 CMakeFiles/Gestor_BdD.dir/src/Logger.cpp.o: ../src/Logger.cpp
 
+CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o: ../include/Buscador.h
+CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o: ../include/DespachanteConsultas.h
+CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o: ../include/Insertor.h
+CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o: ../include/Logger.h
+CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o: ../include/Persona.h
+CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o: ../include/ipc/Cola.h
+CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o: ../include/ipc/ExclusiveLockFile.h
+CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o: ../include/ipc/SharedLockFile.h
 CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o: ../src/Main.cpp
 
 CMakeFiles/Gestor_BdD.dir/src/ipc/ExclusiveLockFile.cpp.o: ../include/ipc/ExclusiveLockFile.h
