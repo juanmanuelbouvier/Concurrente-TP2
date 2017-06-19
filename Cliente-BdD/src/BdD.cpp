@@ -10,20 +10,23 @@ BdD::~BdD() {
     delete consultas;
 }
 
-vector<Persona>* BdD::buscar(Persona consulta) {
+/*vector<Persona>* BdD::buscar(Persona consulta) {*/
+Persona* BdD::buscar(Persona consulta) {
     consultas->escribir(consulta);
-    vector<Persona>* respuesta;
+    //vector<Persona>* respuesta;
     Persona personaEncontrada;
-    do {
+    consultas->leer(RESPUESTA, &personaEncontrada);
+    //TODO: para mas de un resultado deberia usarse esto de abajo. Lo dejo comentado.
+    /*do {
         consultas->leer( nroCliente, &personaEncontrada );
         respuesta->push_back(personaEncontrada);
-    } while (!personaEncontrada.esUnicoResultado);
-    return respuesta;
+    } while (!personaEncontrada.esUnicoResultado);*/
+    return &personaEncontrada;
 }
 
 Persona BdD::insertar(Persona nuevaPersona) {
-    Persona personaConfirmada;
     consultas->escribir(nuevaPersona);
-    consultas->leer( nroCliente, &personaConfirmada );
+    Persona personaConfirmada;
+    consultas->leer( RESPUESTA, &personaConfirmada );
     return personaConfirmada;
 }

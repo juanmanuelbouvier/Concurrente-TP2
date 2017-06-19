@@ -37,6 +37,8 @@ int main() {
     while (true) {  // TODO: Usar gracefulQuit con signals para matar el servidor.
         despachante.despachar();
         sleep(1);   // TODO: Si lo sacamos se me muere la compu.
+
+        //TODO: VER DONDE PONER EL CONSULTAS->DESTRUIR() SINO QUEDA SIEMPRE ABIERTA LA COLA
     }
 
     unlink (archivoTmp.c_str());
