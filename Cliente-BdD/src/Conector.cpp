@@ -2,44 +2,51 @@
 #include <iostream>
 #include "../include/Conector.h"
 
-Conector::Conector() : conectado (false) {
+Conector::Conector() : conectado (false), nroCliente (1) {
 }
 
 Conector::~Conector() {
     this->conectado = false;
+    this->nroCliente = 0;
 }
 
 bool Conector::conectar() {
     if (this->conectado)
         return false;
 
-    this->conectado = true;
+    if ( !existeContadorConexiones() ) {
+        perror("El archivo con el contador de conexiones no existe");
+        return false;
+    }
+
     int numLeido = leerNumero();
     int cantClientes = numLeido + 1;
     escribirNumero(cantClientes);
+    this->conectado = true;
+    this->nroCliente = cantClientes;
     return true;
 }
 
-bool Conector::desconectar() {
-    if (!this->conectado)
-        return false;
+void Conector::desconectar() {
+    if ( !existeContadorConexiones() ) {
+        perror("El archivo con el contador de conexiones no existe");
+        this->nroCliente = 0;
+        return;
+    }
 
-    this->conectado = false;
     int numLeido = leerNumero();
     int cantClientes = numLeido - 1;
     escribirNumero(cantClientes);
-    return true;
+    this->conectado = false;
+    this->nroCliente = cantClientes;
 }
 
-int Conector::nroCliente() {
-    if (!this->conectado)
-        return 0;
-
-    return leerNumero();
+int Conector::verNroCliente() {
+    return nroCliente;
 }
 
 int Conector :: leerNumero () {
-    SharedLockFile readLock = SharedLockFile (archivoTmp);
+    SharedLockFile readLock = SharedLockFile (archivo);
     int numLeido = 0;
     readLock.tomarLock();
     readLock.leer(&numLeido, sizeof(int));
@@ -48,9 +55,18 @@ int Conector :: leerNumero () {
 }
 
 void Conector::escribirNumero(const int nro) {
-    ExclusiveLockFile writeLock = ExclusiveLockFile (archivoTmp);
+    ExclusiveLockFile writeLock = ExclusiveLockFile (archivo);
     writeLock.tomarLock();
     writeLock.remplazar( static_cast<const void*>(&nro), sizeof(int) );
     writeLock.liberarLock();
+}
+
+bool Conector::existeContadorConexiones() {
+    int fdTmp = open ( archivo, O_RDONLY, 0777 );
+    if (fdTmp < 0) {
+        return false;
+    }
+    close ( fdTmp );
+    return true;
 }
 
