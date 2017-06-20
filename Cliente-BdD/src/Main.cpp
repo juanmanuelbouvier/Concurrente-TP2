@@ -69,8 +69,8 @@ int main() {
                     Persona personaBuscar;
                     cout << "BUSQUEDA EN LA BASE DE DATOS" << endl;
                     ingresarPersona(&personaBuscar);
-                    cout << "PERSONA BUSCADA: " << personaBuscar.nombre << " DIR: " <<
-                         personaBuscar.direccion << " TEL: "<< personaBuscar.telefono << endl;
+                    cout << "PERSONA BUSCADA: Nombre: " << personaBuscar.nombre << " - Direccion: " <<
+                         personaBuscar.direccion << " - Telefono: " << personaBuscar.telefono << endl;
 
                     cout << "Se han encontrado los siguientes resultados:" << endl;
                     personasEncontradas = bdd->buscar(personaBuscar);
