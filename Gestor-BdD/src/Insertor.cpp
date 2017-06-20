@@ -36,7 +36,10 @@ bool Insertor::insertar(Persona nuevoRegistro) {
         perror("Error al tomar lock exclusivo para escribir en la base de datos");
         return false;
     }
-    writeLock.escribir ( static_cast<const void *>(registro.c_str()), registro.size() );
+    if ( writeLock.escribir (static_cast<const void *>(registro.c_str()), registro.size()) < 0 ) {
+        perror("Error al intentar escribir en el archivo de la base de datos");
+        return false;
+    }
     writeLock.liberarLock();
     return true;
 }

@@ -50,7 +50,7 @@ int Conector :: leerNumero () {
 void Conector::escribirNumero(const int nro) {
     ExclusiveLockFile writeLock = ExclusiveLockFile (archivoTmp);
     writeLock.tomarLock();
-    writeLock.remplazar(&nro, sizeof(int));
+    writeLock.remplazar( static_cast<const void*>(&nro), sizeof(int) );
     writeLock.liberarLock();
 }
 
