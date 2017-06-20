@@ -9,18 +9,20 @@
 class Conector {
 
 private:
+    const char* archivo = "../../aux/cantClientes.txt";
     bool conectado;
-    const char* archivoTmp = "../../tmp/cantClientes.txt";
+    long nroCliente;
 
-    int leerNumero ();
-    void escribirNumero (const int nro);
+    long leerNumero ();
+    void escribirNumero (const long nro);
+    bool existeContadorConexiones ();
 
 public:
     Conector ();
     ~Conector ();
     bool conectar ();
-    bool desconectar ();
-    int nroCliente ();
+    void desconectar ();
+    long verNroCliente ();
 
 };
 

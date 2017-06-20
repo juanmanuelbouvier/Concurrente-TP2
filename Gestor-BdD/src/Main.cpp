@@ -15,19 +15,23 @@ int crearDirectorioSiNoExiste(string rutaCompletaArchivo) {
     return -1;
 }
 
-void escribirNumero( const char* archivoTmp, const int nro ) {
-    ExclusiveLockFile writeLock = ExclusiveLockFile (archivoTmp);
+void escribirNumero( const char* archivo, const long nro ) {
+    ExclusiveLockFile writeLock = ExclusiveLockFile (archivo);
     writeLock.tomarLock();
-    writeLock.remplazar(&nro, sizeof(int));
+    writeLock.remplazar( &nro, sizeof(long) );
     writeLock.liberarLock();
 }
 
-void inicializarArchivoTemporal(const string archivoTmp) {
-    crearDirectorioSiNoExiste(archivoTmp);
-    int fdTmp = open ( archivoTmp.c_str(), O_CREAT|O_EXCL|O_RDONLY, 0777 );
-    close( fdTmp );
-    escribirNumero ( archivoTmp.c_str(), 0 );
-    Logger :: getInstance() -> info( "Gestor", "Archivo temporal con contador de conexiones de clientes inicializado");
+void inicializarArchivoTemporal(const string archivo) {
+    crearDirectorioSiNoExiste(archivo);
+    int fdTmp = open ( archivo.c_str(), O_CREAT|O_EXCL|O_RDONLY, 0777 );
+    if ( fdTmp < 0 ) {
+        Logger :: getInstance() -> info( "Gestor", "El archivo con contador de conexiones de clientes ya existe");
+    } else {
+        close( fdTmp );
+        escribirNumero ( archivo.c_str(), 0 );
+        Logger :: getInstance() -> info( "Gestor", "Archivo con contador de conexiones de clientes inicializado");
+    }
 }
 
 int main() {
@@ -36,17 +40,14 @@ int main() {
     SIGINT_Handler sigint_handler;
     SignalHandler :: getInstance()->registrarHandler ( SIGINT,&sigint_handler );
 
-    const string archivoTmp = "../../tmp/cantClientes.txt";
-    inicializarArchivoTemporal(archivoTmp);
+    const string archivo = "../../aux/cantClientes.txt";
+    inicializarArchivoTemporal(archivo);
 
     DespachanteConsultas despachante = DespachanteConsultas ();
     while ( sigint_handler.getGracefulQuit() == 0 ) {
         despachante.despachar();
     }
     SignalHandler :: destruir ();
-
-    unlink (archivoTmp.c_str());
-    Logger :: getInstance() -> info( "Gestor", "Archivo temporal con contador de conexiones de clientes eliminado");
 
     return 0;
 }

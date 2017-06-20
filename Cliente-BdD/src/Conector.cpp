@@ -2,55 +2,71 @@
 #include <iostream>
 #include "../include/Conector.h"
 
-Conector::Conector() : conectado (false) {
+Conector::Conector() : conectado (false), nroCliente (1) {
 }
 
 Conector::~Conector() {
     this->conectado = false;
+    this->nroCliente = 0;
 }
 
 bool Conector::conectar() {
     if (this->conectado)
         return false;
 
-    this->conectado = true;
-    int numLeido = leerNumero();
-    int cantClientes = numLeido + 1;
-    escribirNumero(cantClientes);
-    return true;
-}
-
-bool Conector::desconectar() {
-    if (!this->conectado)
+    if ( !existeContadorConexiones() ) {
+        perror("El archivo con el contador de conexiones no existe");
         return false;
+    }
 
-    this->conectado = false;
-    int numLeido = leerNumero();
-    int cantClientes = numLeido - 1;
+    long numLeido = leerNumero();
+    long cantClientes = numLeido + 1;
     escribirNumero(cantClientes);
+    this->conectado = true;
+    this->nroCliente = cantClientes;
     return true;
 }
 
-int Conector::nroCliente() {
-    if (!this->conectado)
-        return 0;
+void Conector::desconectar() {
+    if ( !existeContadorConexiones() ) {
+        perror("El archivo con el contador de conexiones no existe");
+        this->nroCliente = 0;
+        return;
+    }
 
-    return leerNumero();
+    long numLeido = leerNumero();
+    long cantClientes = numLeido - 1;
+    escribirNumero(cantClientes);
+    this->conectado = false;
+    this->nroCliente = cantClientes;
 }
 
-int Conector :: leerNumero () {
-    SharedLockFile readLock = SharedLockFile (archivoTmp);
-    int numLeido = 0;
+long Conector::verNroCliente() {
+    return nroCliente;
+}
+
+long Conector :: leerNumero () {
+    SharedLockFile readLock = SharedLockFile (archivo);
+    long numLeido = 0;
     readLock.tomarLock();
-    readLock.leer(&numLeido, sizeof(int));
+    readLock.leer( &numLeido, sizeof(long) );
     readLock.liberarLock();
     return numLeido;
 }
 
-void Conector::escribirNumero(const int nro) {
-    ExclusiveLockFile writeLock = ExclusiveLockFile (archivoTmp);
+void Conector::escribirNumero(const long nro) {
+    ExclusiveLockFile writeLock = ExclusiveLockFile (archivo);
     writeLock.tomarLock();
-    writeLock.remplazar( static_cast<const void*>(&nro), sizeof(int) );
+    writeLock.remplazar( static_cast<const void*>(&nro), sizeof(long) );
     writeLock.liberarLock();
+}
+
+bool Conector::existeContadorConexiones() {
+    int fdTmp = open ( archivo, O_RDONLY, 0777 );
+    if (fdTmp < 0) {
+        return false;
+    }
+    close ( fdTmp );
+    return true;
 }
 
