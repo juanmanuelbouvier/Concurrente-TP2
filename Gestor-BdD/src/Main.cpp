@@ -1,5 +1,7 @@
 #include <iostream>
 #include "../include/DespachanteConsultas.h"
+#include "../include/ipc/signal/impl/SIGINT_Handler.h"
+#include "../include/ipc/signal/SignalHandler.h"
 
 int crearDirectorioSiNoExiste(string rutaCompletaArchivo) {
     string path = rutaCompletaArchivo.substr(0, rutaCompletaArchivo.find_last_of("\\/"));
@@ -28,15 +30,17 @@ int inicializarArchivoTemporal(const string archivoTmp) {
 }
 
 int main() {
-    std::cout << "Soy gestor!" << std::endl;
+    SIGINT_Handler sigint_handler;
+    SignalHandler :: getInstance()->registrarHandler ( SIGINT,&sigint_handler );
 
     const string archivoTmp = "../../tmp/cantClientes.txt";
     inicializarArchivoTemporal(archivoTmp);
 
     DespachanteConsultas despachante = DespachanteConsultas ();
-    while (true) {  // TODO: Usar gracefulQuit con signals para matar el servidor.
+    while ( sigint_handler.getGracefulQuit() == 0 ) {
         despachante.despachar();
     }
+    SignalHandler :: destruir ();
 
     unlink (archivoTmp.c_str());
 

@@ -100,8 +100,8 @@ int main() {
                 break;
         }
     }
-
     SignalHandler :: destruir ();
+
     delete conector;
     delete bdd;
 
