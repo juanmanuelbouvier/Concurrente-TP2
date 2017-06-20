@@ -7,9 +7,9 @@
 
 using namespace std;
 
-const int INGRESAR = 1;
-const int BUSCAR = 2;
-const int SALIR = 3;
+const char INGRESAR = '1';
+const char BUSCAR = '2';
+const char SALIR = '3';
 
 void ingresarPersona(Persona* persona){
     string input;
@@ -40,7 +40,7 @@ int main() {
 
         cout << "¡Bienvenido! Se ha conectado a la Base de Datos" << endl;
         while ( sigint_handler.getGracefulQuit() == 0 ) {
-            int input;
+            char input;
             cout << "Indique la accion a realizar:" << endl;
             cout << "1 - Si desea ingresar un nuevo registro." << endl;
             cout << "2 - Si desea realizar una busqueda." << endl;
