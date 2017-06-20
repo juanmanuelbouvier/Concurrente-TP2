@@ -53,9 +53,13 @@ int main() {
                 Persona personaIngresada;
                 personaIngresada = bdd->insertar(personaIngresar);
 
+                if (personaIngresada.nombre == "N/N") {
+                    perror("No se pudo insertar a la persona como registro en la base de datos");
+                    break;
+                }
                 cout << "Se ha insertado correctamente a la Base de Datos el siguiente registro:" << endl;
                 cout << "Nombre: " << personaIngresada.nombre << " - Direccion: " <<
-                     personaIngresada.direccion << " - Telefono: "<< personaIngresada.telefono << endl;
+                         personaIngresada.direccion << " - Telefono: " << personaIngresada.telefono << endl;
                 break;
 
             case (BUSCAR):

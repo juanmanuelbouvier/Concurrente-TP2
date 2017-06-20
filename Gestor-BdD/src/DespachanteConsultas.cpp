@@ -1,4 +1,5 @@
 
+#include <cstring>
 #include "../include/DespachanteConsultas.h"
 
 DespachanteConsultas::DespachanteConsultas() {
@@ -16,7 +17,7 @@ DespachanteConsultas::~DespachanteConsultas() {
 
 void DespachanteConsultas::despachar() {
     Persona consulta;
-    int lecturaCorrecta = this->peticiones->leerProximo(&consulta);
+    ssize_t lecturaCorrecta = this->peticiones->leerProximo(&consulta);
 
     if (lecturaCorrecta > 0) {
         pid_t pid = fork();
@@ -37,8 +38,15 @@ void DespachanteConsultas::despachar() {
 
             } else if (consulta.tipoConsulta == INSERCION) {
                 Insertor insertor = Insertor();
-                insertor.insertar(consulta);
-                this->respuestas->escribir(consulta);    // Devuelvo lo mismo como confirmacion de que ya se persistio el dato.
+                bool ok = insertor.insertar(consulta);
+                if (ok) {
+                    this->respuestas->escribir(consulta);    // Devuelvo lo mismo como confirmacion de que ya se persistio el dato.
+                } else {
+                    Persona NN;
+                    strcpy(NN.nombre, "N/N");
+                    NN.mtype = nroCliente;
+                    this->respuestas->escribir(NN);
+                }
                 Logger::getInstance()->info("Gestor", "Consulta de insercion resuelta");
             }
             exit(0);

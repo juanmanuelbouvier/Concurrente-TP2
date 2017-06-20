@@ -22,8 +22,7 @@ int Insertor::crearDirectorioSiNoExiste(string rutaCompletaArchivo) {
     return -1;
 }
 
-void Insertor::insertar(Persona nuevoRegistro) {
-    // TODO: Acceder en modo escritura al archivo de la base de datos.
+bool Insertor::insertar(Persona nuevoRegistro) {
     const string archivoBDD = "../../bdd/registros.txt";
     crearDirectorioSiNoExiste(archivoBDD);
 
@@ -32,8 +31,12 @@ void Insertor::insertar(Persona nuevoRegistro) {
     string telefono = nuevoRegistro.telefono;
 
     ExclusiveLockFile writeLock = ExclusiveLockFile (archivoBDD);
-    writeLock.tomarLock();
     const string registro = nombre + "," + direccion + "," + telefono + "\n";
-    ssize_t resultado = writeLock.escribir ( static_cast<const void *>(registro.c_str()), registro.size() );
+    if (writeLock.tomarLock() < 0) {
+        perror("Error al tomar lock exclusivo para escribir en la base de datos");
+        return false;
+    }
+    writeLock.escribir ( static_cast<const void *>(registro.c_str()), registro.size() );
     writeLock.liberarLock();
+    return true;
 }

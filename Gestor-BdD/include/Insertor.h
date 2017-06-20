@@ -12,7 +12,7 @@ class Insertor {
 public:
     Insertor();
     ~Insertor();
-    void insertar (Persona nuevoRegistro);
+    bool insertar (Persona nuevoRegistro);
 
 private:
     int crearDirectorioSiNoExiste(string rutaCompletaArchivo);
