@@ -32,9 +32,9 @@ vector<Persona> Buscador::buscar(Persona filtros) {
         if (regex_search(nombreLinea,regNombre) && regex_search(direccionLinea,regDireccion) &&
                 regex_search(telefonoLinea,regTelefono)) {
             Persona personaValida;
-            strncpy(personaValida.nombre,nombreLinea,sizeof(personaValida.nombre) -1);
-            strncpy(personaValida.direccion,direccionLinea,sizeof(personaValida.direccion)-1);
-            strncpy(personaValida.telefono,telefonoLinea,sizeof(personaValida.telefono)-1);
+            strcpy(personaValida.nombre,nombreLinea.c_str());
+            strcpy(personaValida.direccion,direccionLinea.c_str());
+            strcpy(personaValida.telefono,telefonoLinea.c_str());
             resultado.push_back(personaValida);
         }
 
