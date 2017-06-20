@@ -96,8 +96,8 @@
       <file leaf-file-name="Buscador.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Buscador.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="36" column="63" lean-forward="false" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
+            <state relative-caret-position="203">
+              <caret line="43" column="46" lean-forward="false" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
               <folding>
                 <element signature="e#1#33#0" expanded="true" />
               </folding>
@@ -493,7 +493,7 @@
       <workItem from="1497716277335" duration="43000" />
       <workItem from="1497719157641" duration="4549000" />
       <workItem from="1497794890857" duration="6015000" />
-      <workItem from="1497973261497" duration="8714000" />
+      <workItem from="1497973261497" duration="9557000" />
     </task>
     <task id="LOCAL-00001" summary="Agrego struct Persona al gestor">
       <created>1497719250955</created>
@@ -551,11 +551,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497986695484</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="pequeño error con strncpy, arreglado">
+      <created>1497986919329</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1497986919329</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19321000" />
+    <option name="totallyTimeSpent" value="20164000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
@@ -596,7 +603,8 @@
     <MESSAGE value="Agrego exclusive locker y logger al gestor" />
     <MESSAGE value="agrego campo tipoConsulta de persona tmb en gestor" />
     <MESSAGE value="Despachante de consultas en el gestor en progreso, mockeados el buscador y el insertor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Despachante de consultas en el gestor en progreso, mockeados el buscador y el insertor" />
+    <MESSAGE value="pequeño error con strncpy, arreglado" />
+    <option name="LAST_COMMIT_MESSAGE" value="pequeño error con strncpy, arreglado" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -883,8 +891,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Buscador.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="36" column="63" lean-forward="false" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
+        <state relative-caret-position="203">
+          <caret line="43" column="46" lean-forward="false" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
           <folding>
             <element signature="e#1#33#0" expanded="true" />
           </folding>

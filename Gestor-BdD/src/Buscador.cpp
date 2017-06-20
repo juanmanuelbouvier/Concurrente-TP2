@@ -35,9 +35,15 @@ vector<Persona> Buscador::buscar(Persona filtros) {
             strcpy(personaValida.nombre,nombreLinea.c_str());
             strcpy(personaValida.direccion,direccionLinea.c_str());
             strcpy(personaValida.telefono,telefonoLinea.c_str());
+            personaValida.faltanResultados = true;
             resultado.push_back(personaValida);
         }
-
+        if (resultado.size() == 0){
+            Persona noEncontrado;
+            strcpy(noEncontrado.nombre, "No Se encontro a nadie");
+            resultado.push_back(noEncontrado);
+        }
+        resultado.back().faltanResultados = false;
     }
     return resultado;
 }
