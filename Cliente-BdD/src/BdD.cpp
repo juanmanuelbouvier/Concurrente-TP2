@@ -23,7 +23,7 @@ Persona BdD::buscar(Persona consulta) {
     /*do {
         consultas->leer( nroCliente, &personaEncontrada );
         respuesta->push_back(personaEncontrada);
-    } while (!personaEncontrada.esUnicoResultado);*/
+    } while (personaEncontrada.faltanResultados);*/
     return personaEncontrada;
 }
 

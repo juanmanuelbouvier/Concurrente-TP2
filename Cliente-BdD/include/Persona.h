@@ -15,7 +15,7 @@ typedef struct Persona {
     char direccion [MAX_DIRECCION];
     char telefono [MAX_TELEFONO];
     int tipoConsulta;
-    bool esUnicoResultado;
+    bool faltanResultados;
 } Persona;
 
 
