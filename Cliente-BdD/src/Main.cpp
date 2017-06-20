@@ -2,7 +2,8 @@
 #include "../include/Conector.h"
 #include "../include/Logger.h"
 #include "../include/BdD.h"
-#include <string.h>
+#include "../include/ipc/signal/impl/SIGINT_Handler.h"
+#include "../include/ipc/signal/SignalHandler.h"
 
 using namespace std;
 
@@ -27,6 +28,9 @@ void ingresarPersona(Persona* persona){
 }
 
 int main() {
+    SIGINT_Handler sigint_handler;
+    SignalHandler :: getInstance()->registrarHandler ( SIGINT,&sigint_handler );
+
     Conector* conector = new Conector();
     conector->conectar();
     Logger :: getInstance() -> info( "Cliente", "Soy el cliente nro " + to_string(conector->nroCliente()) + " y me voy a conectar");
@@ -35,7 +39,7 @@ int main() {
     BdD* bdd = new BdD(nroCliente);
 
     cout << "¡Bienvenido! Se ha conectado a la Base de Datos" << endl;
-    while (true){
+    while ( sigint_handler.getGracefulQuit() == 0 ) {
         int input;
         cout << "Indique la accion a realizar:" << endl;
         cout << "1 - Si desea ingresar un nuevo registro." << endl;
@@ -96,4 +100,10 @@ int main() {
                 break;
         }
     }
+
+    SignalHandler :: destruir ();
+    delete conector;
+    delete bdd;
+
+    return 0;
 }
