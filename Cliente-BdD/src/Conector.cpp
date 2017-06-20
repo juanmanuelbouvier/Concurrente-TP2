@@ -19,8 +19,8 @@ bool Conector::conectar() {
         return false;
     }
 
-    int numLeido = leerNumero();
-    int cantClientes = numLeido + 1;
+    long numLeido = leerNumero();
+    long cantClientes = numLeido + 1;
     escribirNumero(cantClientes);
     this->conectado = true;
     this->nroCliente = cantClientes;
@@ -34,30 +34,30 @@ void Conector::desconectar() {
         return;
     }
 
-    int numLeido = leerNumero();
-    int cantClientes = numLeido - 1;
+    long numLeido = leerNumero();
+    long cantClientes = numLeido - 1;
     escribirNumero(cantClientes);
     this->conectado = false;
     this->nroCliente = cantClientes;
 }
 
-int Conector::verNroCliente() {
+long Conector::verNroCliente() {
     return nroCliente;
 }
 
-int Conector :: leerNumero () {
+long Conector :: leerNumero () {
     SharedLockFile readLock = SharedLockFile (archivo);
-    int numLeido = 0;
+    long numLeido = 0;
     readLock.tomarLock();
-    readLock.leer(&numLeido, sizeof(int));
+    readLock.leer( &numLeido, sizeof(long) );
     readLock.liberarLock();
     return numLeido;
 }
 
-void Conector::escribirNumero(const int nro) {
+void Conector::escribirNumero(const long nro) {
     ExclusiveLockFile writeLock = ExclusiveLockFile (archivo);
     writeLock.tomarLock();
-    writeLock.remplazar( static_cast<const void*>(&nro), sizeof(int) );
+    writeLock.remplazar( static_cast<const void*>(&nro), sizeof(long) );
     writeLock.liberarLock();
 }
 

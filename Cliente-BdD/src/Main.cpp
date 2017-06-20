@@ -34,7 +34,7 @@ int main() {
     Conector* conector = new Conector();
     if ( conector->conectar() ) {
         Logger :: getInstance() -> info( "Cliente", "Soy el cliente nro " + to_string(conector->verNroCliente()) + " y me voy a conectar");
-        int nroCliente = conector->verNroCliente();
+        long nroCliente = conector->verNroCliente();
 
         BdD* bdd = new BdD(nroCliente);
 

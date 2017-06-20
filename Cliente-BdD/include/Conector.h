@@ -11,10 +11,10 @@ class Conector {
 private:
     const char* archivo = "../../aux/cantClientes.txt";
     bool conectado;
-    int nroCliente;
+    long nroCliente;
 
-    int leerNumero ();
-    void escribirNumero (const int nro);
+    long leerNumero ();
+    void escribirNumero (const long nro);
     bool existeContadorConexiones ();
 
 public:
@@ -22,7 +22,7 @@ public:
     ~Conector ();
     bool conectar ();
     void desconectar ();
-    int verNroCliente ();
+    long verNroCliente ();
 
 };
 

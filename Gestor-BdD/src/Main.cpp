@@ -15,10 +15,10 @@ int crearDirectorioSiNoExiste(string rutaCompletaArchivo) {
     return -1;
 }
 
-void escribirNumero( const char* archivo, const int nro ) {
+void escribirNumero( const char* archivo, const long nro ) {
     ExclusiveLockFile writeLock = ExclusiveLockFile (archivo);
     writeLock.tomarLock();
-    writeLock.remplazar(&nro, sizeof(int));
+    writeLock.remplazar( &nro, sizeof(long) );
     writeLock.liberarLock();
 }
 
