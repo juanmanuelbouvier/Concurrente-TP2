@@ -20,7 +20,7 @@ private:
 public:
     BdD ( long nroCliente );
     ~BdD ();
-    Persona buscar (Persona consulta);
+    vector<Persona> buscar (Persona consulta);
     Persona insertar (Persona nuevaPersona);
 
 

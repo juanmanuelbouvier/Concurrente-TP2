@@ -47,16 +47,15 @@ int main() {
         cout << "3 - Si desea desconectarse y salir de la Base de Datos." << endl;
         cin >> input;
 
+        Persona personaIngresada;
+        vector<Persona> personasEncontradas;
         switch (input){
             case (INGRESAR):
                 Persona personaIngresar;
                 cout << "INGRESAR NUEVA PERSONA A LA BASE DE DATOS" << endl;
                 ingresarPersona(&personaIngresar);
-                personaIngresar.tipoConsulta = INSERCION;
 
-                Persona personaIngresada;
                 personaIngresada = bdd->insertar(personaIngresar);
-
                 if (personaIngresada.nombre == "N/N") {
                     perror("No se pudo insertar a la persona como registro en la base de datos");
                     break;
@@ -70,22 +69,16 @@ int main() {
                 Persona personaBuscar;
                 cout << "BUSQUEDA EN LA BASE DE DATOS" << endl;
                 ingresarPersona(&personaBuscar);
-                personaBuscar.tipoConsulta = BUSQUEDA;
                 cout << "PERSONA BUSCADA: " << personaBuscar.nombre << " DIR: " <<
                      personaBuscar.direccion << " TEL: "<< personaBuscar.telefono << endl;
 
-                Persona personaEncontrada;
-                personaEncontrada = bdd->buscar(personaBuscar);
-                //TODO: usar esto cuando se adapte a varios resultados
-                /*for (int i = 0; i < resultado->size(); i++){
-                    Persona persona = resultado->at(i);
-                    cout << "Se han encontrado los siguientes resultados:" << endl;
-                    cout << "Nombre: " << persona.nombre << " - Direccion: " <<
-                         persona.direccion << " - Telefono: "<< persona.telefono << endl;
-                }*/
                 cout << "Se han encontrado los siguientes resultados:" << endl;
-                cout << "Nombre: " << personaEncontrada.nombre << " - Direccion: " <<
-                     personaEncontrada.direccion << " - Telefono: "<< personaEncontrada.telefono << endl;
+                personasEncontradas = bdd->buscar(personaBuscar);
+                for (int i = 0; i < personasEncontradas.size(); i++){
+                    Persona personaEncontrada = personasEncontradas.at(i);
+                    cout << "Nombre: " << personaEncontrada.nombre << " - Direccion: " <<
+                         personaEncontrada.direccion << " - Telefono: "<< personaEncontrada.telefono << endl;
+                }
                 break;
 
             case (SALIR):

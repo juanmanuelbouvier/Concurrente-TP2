@@ -12,23 +12,22 @@ BdD::~BdD() {
     delete respuestas;
 }
 
-/*vector<Persona>* BdD::buscar(Persona consulta) {*/
-Persona BdD::buscar(Persona consulta) {
+vector<Persona> BdD::buscar(Persona consulta) {
     consulta.mtype = nroCliente;
+    consulta.tipoConsulta = BUSQUEDA;
     peticiones->escribir(consulta);
-    //vector<Persona>* respuesta;
+    vector<Persona> respuesta;
     Persona personaEncontrada;
-    respuestas->leer(nroCliente, &personaEncontrada);
-    //TODO: para mas de un resultado deberia usarse esto de abajo. Lo dejo comentado.
-    /*do {
-        consultas->leer( nroCliente, &personaEncontrada );
-        respuesta->push_back(personaEncontrada);
-    } while (personaEncontrada.faltanResultados);*/
-    return personaEncontrada;
+    do {
+        respuestas->leer(nroCliente, &personaEncontrada);
+        respuesta.push_back(personaEncontrada);
+    } while (personaEncontrada.faltanResultados);
+    return respuesta;
 }
 
 Persona BdD::insertar(Persona nuevaPersona) {
     nuevaPersona.mtype = nroCliente;
+    nuevaPersona.tipoConsulta = INSERCION;
     peticiones->escribir(nuevaPersona);
     Persona personaConfirmada;
     respuestas->leer( nroCliente, &personaConfirmada );

@@ -30,7 +30,7 @@ void DespachanteConsultas::despachar() {
                 for (int i = 0; i < respuesta.size(); i++) {
                     Persona aEncolar = respuesta.at(i);
                     aEncolar.mtype = nroCliente;
-                    aEncolar.faltanResultados = false; // TODO: de prueba, deberia ir en el Buscador
+                    aEncolar.faltanResultados = i+1 < respuesta.size();
                     this->respuestas->escribir(aEncolar);
                     Logger::getInstance()->info("Gestor", "Resultado de Búsqueda encolado");
                 }
