@@ -42,7 +42,7 @@ vector<Persona> Buscador::buscar(Persona filtros) {
     lockLectura.liberarLock();
     if (resultado.size() == 0){
         Persona noEncontrado;
-        strcpy(noEncontrado.nombre, "No Se encontro a nadie");
+        strcpy(noEncontrado.nombre, "N/N");
         resultado.push_back(noEncontrado);
     }
     resultado.back().faltanResultados = false;

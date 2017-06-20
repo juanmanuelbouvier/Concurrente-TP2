@@ -56,7 +56,7 @@ int main() {
                     ingresarPersona(&personaIngresar);
 
                     personaIngresada = bdd->insertar(personaIngresar);
-                    if (personaIngresada.nombre == "N/N") {
+                    if (strcmp (personaIngresada.nombre, "N/N") == 0) {
                         perror("No se pudo insertar a la persona como registro en la base de datos");
                         break;
                     }
@@ -72,12 +72,16 @@ int main() {
                     cout << "PERSONA BUSCADA: Nombre: " << personaBuscar.nombre << " - Direccion: " <<
                          personaBuscar.direccion << " - Telefono: " << personaBuscar.telefono << endl;
 
-                    cout << "Se han encontrado los siguientes resultados:" << endl;
+                    cout << "El resultado de la busqueda fue:" << endl;
                     personasEncontradas = bdd->buscar(personaBuscar);
                     for (int i = 0; i < personasEncontradas.size(); i++){
                         Persona personaEncontrada = personasEncontradas.at(i);
+                        if (strcmp (personaEncontrada.nombre, "N/N") == 0) {
+                            cout << "No se encontraron resultados." << endl;
+                        } else {
                         cout << "Nombre: " << personaEncontrada.nombre << " - Direccion: " <<
                              personaEncontrada.direccion << " - Telefono: "<< personaEncontrada.telefono << endl;
+                        }
                     }
                     break;
 
