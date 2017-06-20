@@ -16,6 +16,7 @@ DespachanteConsultas::~DespachanteConsultas() {
 }
 
 void DespachanteConsultas::despachar() {
+    cout << "Esperando consulta..." << endl;
     Persona consulta;
     ssize_t lecturaCorrecta = this->peticiones->leerProximo(&consulta);
 

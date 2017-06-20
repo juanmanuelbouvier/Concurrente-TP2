@@ -30,6 +30,8 @@ int inicializarArchivoTemporal(const string archivoTmp) {
 }
 
 int main() {
+    cout << "Gestor de base de datos de personas iniciado" << endl;
+
     SIGINT_Handler sigint_handler;
     SignalHandler :: getInstance()->registrarHandler ( SIGINT,&sigint_handler );
 
