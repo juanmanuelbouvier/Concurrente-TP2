@@ -13,13 +13,14 @@ using namespace std;
 class BdD {
 
 private:
-    Cola<Persona>* consultas;
+    Cola<Persona>* peticiones;
+    Cola<Persona>* respuestas;
     long nroCliente;
 
 public:
     BdD ( long nroCliente );
     ~BdD ();
-    Persona* buscar (Persona consulta);
+    Persona buscar (Persona consulta);
     Persona insertar (Persona nuevaPersona);
 
 

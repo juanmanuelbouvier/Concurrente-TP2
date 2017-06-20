@@ -48,8 +48,6 @@ int main() {
                 Persona personaIngresar;
                 cout << "INGRESAR NUEVA PERSONA A LA BASE DE DATOS" << endl;
                 ingresarPersona(&personaIngresar);
-                personaIngresar.mtype = PETICION;
-                personaIngresar.id = nroCliente;
                 personaIngresar.tipoConsulta = INSERCION;
 
                 Persona personaIngresada;
@@ -64,14 +62,12 @@ int main() {
                 Persona personaBuscar;
                 cout << "BUSQUEDA EN LA BASE DE DATOS" << endl;
                 ingresarPersona(&personaBuscar);
-                personaBuscar.mtype = PETICION;
-                personaBuscar.id = nroCliente;
                 personaBuscar.tipoConsulta = BUSQUEDA;
                 cout << "PERSONA BUSCADA: " << personaBuscar.nombre << " DIR: " <<
                      personaBuscar.direccion << " TEL: "<< personaBuscar.telefono << endl;
 
-                Persona* resultado;
-                resultado = bdd->buscar(personaBuscar);
+                Persona personaEncontrada;
+                personaEncontrada = bdd->buscar(personaBuscar);
                 //TODO: usar esto cuando se adapte a varios resultados
                 /*for (int i = 0; i < resultado->size(); i++){
                     Persona persona = resultado->at(i);
@@ -80,8 +76,8 @@ int main() {
                          persona.direccion << " - Telefono: "<< persona.telefono << endl;
                 }*/
                 cout << "Se han encontrado los siguientes resultados:" << endl;
-                cout << "Nombre: " << resultado->nombre << " - Direccion: " <<
-                     resultado->direccion << " - Telefono: "<< resultado->telefono << endl;
+                cout << "Nombre: " << personaEncontrada.nombre << " - Direccion: " <<
+                     personaEncontrada.direccion << " - Telefono: "<< personaEncontrada.telefono << endl;
                 break;
 
             case (SALIR):

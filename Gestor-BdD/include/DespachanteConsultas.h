@@ -13,7 +13,8 @@
 class DespachanteConsultas {
 
 private:
-    Cola<Persona>* consultas;
+    Cola<Persona>* peticiones;
+    Cola<Persona>* respuestas;
 
 public:
     DespachanteConsultas();
