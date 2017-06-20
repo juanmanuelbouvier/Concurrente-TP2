@@ -22,11 +22,12 @@ void escribirNumero( const char* archivoTmp, const int nro ) {
     writeLock.liberarLock();
 }
 
-int inicializarArchivoTemporal(const string archivoTmp) {
+void inicializarArchivoTemporal(const string archivoTmp) {
     crearDirectorioSiNoExiste(archivoTmp);
     int fdTmp = open ( archivoTmp.c_str(), O_CREAT|O_EXCL|O_RDONLY, 0777 );
+    close( fdTmp );
     escribirNumero ( archivoTmp.c_str(), 0 );
-    return close( fdTmp );
+    Logger :: getInstance() -> info( "Gestor", "Archivo temporal con contador de conexiones de clientes inicializado");
 }
 
 int main() {
@@ -45,6 +46,7 @@ int main() {
     SignalHandler :: destruir ();
 
     unlink (archivoTmp.c_str());
+    Logger :: getInstance() -> info( "Gestor", "Archivo temporal con contador de conexiones de clientes eliminado");
 
     return 0;
 }
