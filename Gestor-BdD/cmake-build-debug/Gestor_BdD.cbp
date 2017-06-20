@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug"/>
+				<Option working_dir="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug"/>
+				<Option working_dir="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug"/>
+				<Option working_dir="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Gestor_BdD">
-				<Option output="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/Gestor_BdD" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug"/>
+				<Option output="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug/Gestor_BdD" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -54,15 +54,15 @@
 					<Add directory="/usr/include/c++/5/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 Gestor_BdD"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 Gestor_BdD"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Gestor_BdD/fast">
-				<Option output="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/Gestor_BdD" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug"/>
+				<Option output="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug/Gestor_BdD" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -77,65 +77,83 @@
 					<Add directory="/usr/include/c++/5/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 Gestor_BdD/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 Gestor_BdD/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/include/Buscador.h">
+		<Unit filename="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/include/Buscador.h">
 			<Option target="Gestor_BdD"/>
 		</Unit>
-		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/include/DespachanteConsultas.h">
+		<Unit filename="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/include/DespachanteConsultas.h">
 			<Option target="Gestor_BdD"/>
 		</Unit>
-		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/include/Insertor.h">
+		<Unit filename="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/include/Insertor.h">
 			<Option target="Gestor_BdD"/>
 		</Unit>
-		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/include/Logger.h">
+		<Unit filename="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/include/Logger.h">
 			<Option target="Gestor_BdD"/>
 		</Unit>
-		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/include/Persona.h">
+		<Unit filename="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/include/Persona.h">
 			<Option target="Gestor_BdD"/>
 		</Unit>
-		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/include/ipc/Cola.h">
+		<Unit filename="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/include/ipc/Cola.h">
 			<Option target="Gestor_BdD"/>
 		</Unit>
-		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/include/ipc/ExclusiveLockFile.h">
+		<Unit filename="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/include/ipc/ExclusiveLockFile.h">
 			<Option target="Gestor_BdD"/>
 		</Unit>
-		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/include/ipc/Semaforo.h">
+		<Unit filename="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/include/ipc/Semaforo.h">
 			<Option target="Gestor_BdD"/>
 		</Unit>
-		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/include/ipc/SharedLockFile.h">
+		<Unit filename="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/include/ipc/SharedLockFile.h">
 			<Option target="Gestor_BdD"/>
 		</Unit>
-		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/Buscador.cpp">
+		<Unit filename="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/include/ipc/signal/EventHandler.h">
 			<Option target="Gestor_BdD"/>
 		</Unit>
-		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/DespachanteConsultas.cpp">
+		<Unit filename="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/include/ipc/signal/SignalHandler.h">
 			<Option target="Gestor_BdD"/>
 		</Unit>
-		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/Insertor.cpp">
+		<Unit filename="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/include/ipc/signal/impl/SIGINT_Handler.h">
 			<Option target="Gestor_BdD"/>
 		</Unit>
-		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/Logger.cpp">
+		<Unit filename="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/include/utils.h">
 			<Option target="Gestor_BdD"/>
 		</Unit>
-		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/Main.cpp">
+		<Unit filename="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/src/Buscador.cpp">
 			<Option target="Gestor_BdD"/>
 		</Unit>
-		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/ipc/ExclusiveLockFile.cpp">
+		<Unit filename="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/src/DespachanteConsultas.cpp">
 			<Option target="Gestor_BdD"/>
 		</Unit>
-		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/ipc/Semaforo.cpp">
+		<Unit filename="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/src/Insertor.cpp">
 			<Option target="Gestor_BdD"/>
 		</Unit>
-		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/src/ipc/SharedLockFile.cpp">
+		<Unit filename="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/src/Logger.cpp">
 			<Option target="Gestor_BdD"/>
 		</Unit>
-		<Unit filename="/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/CMakeLists.txt">
+		<Unit filename="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/src/Main.cpp">
+			<Option target="Gestor_BdD"/>
+		</Unit>
+		<Unit filename="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/src/ipc/ExclusiveLockFile.cpp">
+			<Option target="Gestor_BdD"/>
+		</Unit>
+		<Unit filename="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/src/ipc/Semaforo.cpp">
+			<Option target="Gestor_BdD"/>
+		</Unit>
+		<Unit filename="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/src/ipc/SharedLockFile.cpp">
+			<Option target="Gestor_BdD"/>
+		</Unit>
+		<Unit filename="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/src/ipc/signal/SignalHandler.cpp">
+			<Option target="Gestor_BdD"/>
+		</Unit>
+		<Unit filename="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/src/utils.cpp">
+			<Option target="Gestor_BdD"/>
+		</Unit>
+		<Unit filename="/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

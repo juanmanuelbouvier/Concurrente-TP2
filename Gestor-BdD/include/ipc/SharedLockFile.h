@@ -25,6 +25,7 @@ public:
 
     int tomarLock ();
     int liberarLock ();
+    int getDescriptor();
     ssize_t leer ( void* buffer,const ssize_t buffsize ) const;
 
 };

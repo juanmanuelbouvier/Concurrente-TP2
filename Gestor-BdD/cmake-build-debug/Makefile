@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/clion-2016.3.4/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/xx/CLion/clion-2016.3.4/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /opt/clion-2016.3.4/bin/cmake/bin/cmake -E remove -f
+RM = /home/xx/CLion/clion-2016.3.4/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD
+CMAKE_SOURCE_DIR = /home/xx/git/Concurrente-TP2-CLion/Gestor-BdD
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug
+CMAKE_BINARY_DIR = /home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmak
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/opt/clion-2016.3.4/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/xx/CLion/clion-2016.3.4/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/opt/clion-2016.3.4/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/xx/CLion/clion-2016.3.4/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/CMakeFiles /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug/CMakeFiles /home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -339,6 +339,60 @@ src/ipc/SharedLockFile.cpp.s:
 	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/ipc/SharedLockFile.cpp.s
 .PHONY : src/ipc/SharedLockFile.cpp.s
 
+src/ipc/signal/SignalHandler.o: src/ipc/signal/SignalHandler.cpp.o
+
+.PHONY : src/ipc/signal/SignalHandler.o
+
+# target to build an object file
+src/ipc/signal/SignalHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/ipc/signal/SignalHandler.cpp.o
+.PHONY : src/ipc/signal/SignalHandler.cpp.o
+
+src/ipc/signal/SignalHandler.i: src/ipc/signal/SignalHandler.cpp.i
+
+.PHONY : src/ipc/signal/SignalHandler.i
+
+# target to preprocess a source file
+src/ipc/signal/SignalHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/ipc/signal/SignalHandler.cpp.i
+.PHONY : src/ipc/signal/SignalHandler.cpp.i
+
+src/ipc/signal/SignalHandler.s: src/ipc/signal/SignalHandler.cpp.s
+
+.PHONY : src/ipc/signal/SignalHandler.s
+
+# target to generate assembly for a file
+src/ipc/signal/SignalHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/ipc/signal/SignalHandler.cpp.s
+.PHONY : src/ipc/signal/SignalHandler.cpp.s
+
+src/utils.o: src/utils.cpp.o
+
+.PHONY : src/utils.o
+
+# target to build an object file
+src/utils.cpp.o:
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/utils.cpp.o
+.PHONY : src/utils.cpp.o
+
+src/utils.i: src/utils.cpp.i
+
+.PHONY : src/utils.i
+
+# target to preprocess a source file
+src/utils.cpp.i:
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/utils.cpp.i
+.PHONY : src/utils.cpp.i
+
+src/utils.s: src/utils.cpp.s
+
+.PHONY : src/utils.s
+
+# target to generate assembly for a file
+src/utils.cpp.s:
+	$(MAKE) -f CMakeFiles/Gestor_BdD.dir/build.make CMakeFiles/Gestor_BdD.dir/src/utils.cpp.s
+.PHONY : src/utils.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -372,6 +426,12 @@ help:
 	@echo "... src/ipc/SharedLockFile.o"
 	@echo "... src/ipc/SharedLockFile.i"
 	@echo "... src/ipc/SharedLockFile.s"
+	@echo "... src/ipc/signal/SignalHandler.o"
+	@echo "... src/ipc/signal/SignalHandler.i"
+	@echo "... src/ipc/signal/SignalHandler.s"
+	@echo "... src/utils.o"
+	@echo "... src/utils.i"
+	@echo "... src/utils.s"
 .PHONY : help
 
 

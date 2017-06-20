@@ -4,6 +4,7 @@
 CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.o: ../include/Buscador.h
 CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.o: ../include/Persona.h
 CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.o: ../include/ipc/SharedLockFile.h
+CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.o: ../include/utils.h
 CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.o: ../src/Buscador.cpp
 
 CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.o: ../include/Buscador.h
@@ -18,6 +19,7 @@ CMakeFiles/Gestor_BdD.dir/src/DespachanteConsultas.cpp.o: ../src/DespachanteCons
 
 CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.o: ../include/Insertor.h
 CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.o: ../include/Persona.h
+CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.o: ../include/ipc/ExclusiveLockFile.h
 CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.o: ../src/Insertor.cpp
 
 CMakeFiles/Gestor_BdD.dir/src/Logger.cpp.o: ../include/Logger.h
@@ -32,6 +34,9 @@ CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o: ../include/Persona.h
 CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o: ../include/ipc/Cola.h
 CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o: ../include/ipc/ExclusiveLockFile.h
 CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o: ../include/ipc/SharedLockFile.h
+CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o: ../include/ipc/signal/EventHandler.h
+CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o: ../include/ipc/signal/SignalHandler.h
+CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o: ../include/ipc/signal/impl/SIGINT_Handler.h
 CMakeFiles/Gestor_BdD.dir/src/Main.cpp.o: ../src/Main.cpp
 
 CMakeFiles/Gestor_BdD.dir/src/ipc/ExclusiveLockFile.cpp.o: ../include/ipc/ExclusiveLockFile.h
@@ -42,4 +47,11 @@ CMakeFiles/Gestor_BdD.dir/src/ipc/Semaforo.cpp.o: ../src/ipc/Semaforo.cpp
 
 CMakeFiles/Gestor_BdD.dir/src/ipc/SharedLockFile.cpp.o: ../include/ipc/SharedLockFile.h
 CMakeFiles/Gestor_BdD.dir/src/ipc/SharedLockFile.cpp.o: ../src/ipc/SharedLockFile.cpp
+
+CMakeFiles/Gestor_BdD.dir/src/ipc/signal/SignalHandler.cpp.o: ../include/ipc/signal/EventHandler.h
+CMakeFiles/Gestor_BdD.dir/src/ipc/signal/SignalHandler.cpp.o: ../include/ipc/signal/SignalHandler.h
+CMakeFiles/Gestor_BdD.dir/src/ipc/signal/SignalHandler.cpp.o: ../src/ipc/signal/SignalHandler.cpp
+
+CMakeFiles/Gestor_BdD.dir/src/utils.cpp.o: ../include/utils.h
+CMakeFiles/Gestor_BdD.dir/src/utils.cpp.o: ../src/utils.cpp
 

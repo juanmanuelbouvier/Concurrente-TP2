@@ -1,4 +1,4 @@
-# Install script for directory: /home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD
+# Install script for directory: /home/xx/git/Concurrente-TP2-CLion/Gestor-BdD
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/buby/FIUBA/Concurrencia/Concurrente-TP2/Gestor-BdD/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/xx/git/Concurrente-TP2-CLion/Gestor-BdD/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

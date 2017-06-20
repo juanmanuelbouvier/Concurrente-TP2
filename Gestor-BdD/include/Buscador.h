@@ -6,8 +6,9 @@
 #include <vector>
 #include "ipc/SharedLockFile.h"
 #include "Persona.h"
+#include <fstream>
+#include <regex>
 
-using namespace std;
 
 class Buscador {
 

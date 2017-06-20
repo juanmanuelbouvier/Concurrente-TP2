@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Gestor_BdD.dir/src/Buscador.cpp.o"
   "CMakeFiles/Gestor_BdD.dir/src/ipc/SharedLockFile.cpp.o"
   "CMakeFiles/Gestor_BdD.dir/src/Insertor.cpp.o"
+  "CMakeFiles/Gestor_BdD.dir/src/ipc/signal/SignalHandler.cpp.o"
+  "CMakeFiles/Gestor_BdD.dir/src/utils.cpp.o"
   "Gestor_BdD.pdb"
   "Gestor_BdD"
 )

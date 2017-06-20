@@ -13,6 +13,11 @@ SharedLockFile :: SharedLockFile ( const string nombre ) {
     this->fd = open ( this->nombre.c_str(),O_CREAT|O_RDONLY,0777 );
 }
 
+
+int SharedLockFile::getDescriptor() {
+    return this->fd;
+}
+
 int SharedLockFile :: tomarLock () {
     this->fl.l_type = F_RDLCK;
     return fcntl ( this->fd,F_SETLKW,&(this->fl) );
