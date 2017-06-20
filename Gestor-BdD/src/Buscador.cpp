@@ -38,12 +38,12 @@ vector<Persona> Buscador::buscar(Persona filtros) {
             personaValida.faltanResultados = true;
             resultado.push_back(personaValida);
         }
-        if (resultado.size() == 0){
-            Persona noEncontrado;
-            strcpy(noEncontrado.nombre, "No Se encontro a nadie");
-            resultado.push_back(noEncontrado);
-        }
-        resultado.back().faltanResultados = false;
     }
+    if (resultado.size() == 0){
+        Persona noEncontrado;
+        strcpy(noEncontrado.nombre, "No Se encontro a nadie");
+        resultado.push_back(noEncontrado);
+    }
+    resultado.back().faltanResultados = false;
     return resultado;
 }
