@@ -1,4 +1,3 @@
-cmake_minimum_required(VERSION 3.6)
 project(Cliente_BdD)
 
 set(CMAKE_CXX_STANDARD 11)
