@@ -14,7 +14,7 @@ private:
     long nroCliente;
 
     long leerNumero ();
-    void escribirNumero (const long nro);
+    ssize_t escribirNumero (const long nro);
     bool existeContadorConexiones ();
 
 public:

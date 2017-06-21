@@ -1,6 +1,7 @@
 
 #include <iostream>
 #include "../include/Conector.h"
+#include "../include/Logger.h"
 
 Conector::Conector() : conectado (false), nroCliente (1) {
 }
@@ -20,25 +21,37 @@ bool Conector::conectar() {
     }
 
     long numLeido = leerNumero();
+    if (numLeido < 0) {
+        Logger :: getInstance() -> info( "Conector", "No se pudo leer la cantidad de clientes conectados");
+        return false;
+    }
     long cantClientes = numLeido + 1;
-    escribirNumero(cantClientes);
+    if ( escribirNumero(cantClientes) <= 0 ) {
+        Logger :: getInstance() -> info( "Conector", "No se pudo actualizar el contador de clientes conectados");
+        return false;
+    }
     this->conectado = true;
     this->nroCliente = cantClientes;
     return true;
 }
 
 void Conector::desconectar() {
+    this->conectado = false;
+
     if ( !existeContadorConexiones() ) {
         perror("El archivo con el contador de conexiones no existe");
-        this->nroCliente = 0;
         return;
     }
 
     long numLeido = leerNumero();
-    long cantClientes = numLeido - 1;
-    escribirNumero(cantClientes);
-    this->conectado = false;
-    this->nroCliente = cantClientes;
+    if (numLeido >= 0) {
+        long cantClientes = numLeido - 1;
+        if ( escribirNumero(cantClientes) <= 0 ) {
+            Logger :: getInstance() -> info( "Conector", "No se pudo decrementar el contador de conexiones activas al desconectar el cliente");
+        }
+    } else {
+        Logger :: getInstance() -> info( "Conector", "No se pudo leer la cantidad de clientes conectados entonces no se pudo decrementar el contador al desconectar el cliente");
+    }
 }
 
 long Conector::verNroCliente() {
@@ -49,16 +62,23 @@ long Conector :: leerNumero () {
     SharedLockFile readLock = SharedLockFile (archivo);
     long numLeido = 0;
     readLock.tomarLock();
-    readLock.leer( &numLeido, sizeof(long) );
+    if ( readLock.leer(&numLeido, sizeof(long)) <= 0 ) {
+        perror("No se pudo leer el archivo contador de conexiones");
+        numLeido = -1;
+    }
     readLock.liberarLock();
     return numLeido;
 }
 
-void Conector::escribirNumero(const long nro) {
+ssize_t Conector::escribirNumero(const long nro) {
     ExclusiveLockFile writeLock = ExclusiveLockFile (archivo);
     writeLock.tomarLock();
-    writeLock.remplazar( static_cast<const void*>(&nro), sizeof(long) );
+    ssize_t bytesEscritos = writeLock.remplazar( static_cast<const void*>(&nro), sizeof(long) );
+    if ( bytesEscritos <= 0 ) {
+        perror("No se pudo actualizar el contador de conexiones");
+    }
     writeLock.liberarLock();
+    return bytesEscritos;
 }
 
 bool Conector::existeContadorConexiones() {
