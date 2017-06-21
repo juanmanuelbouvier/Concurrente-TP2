@@ -37,21 +37,6 @@ bool Conector::conectar() {
 
 void Conector::desconectar() {
     this->conectado = false;
-
-    if ( !existeContadorConexiones() ) {
-        perror("El archivo con el contador de conexiones no existe");
-        return;
-    }
-
-    long numLeido = leerNumero();
-    if (numLeido >= 0) {
-        long cantClientes = numLeido - 1;
-        if ( escribirNumero(cantClientes) <= 0 ) {
-            Logger :: getInstance() -> info( "Conector", "No se pudo decrementar el contador de conexiones activas al desconectar el cliente");
-        }
-    } else {
-        Logger :: getInstance() -> info( "Conector", "No se pudo leer la cantidad de clientes conectados entonces no se pudo decrementar el contador al desconectar el cliente");
-    }
 }
 
 long Conector::verNroCliente() {
