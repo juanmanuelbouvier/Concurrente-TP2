@@ -50,6 +50,7 @@ void DespachanteConsultas::despachar() {
                 }
                 Logger::getInstance()->info("Gestor", "Consulta de insercion resuelta");
             }
+            Logger :: destruir ();
             exit(0);
         }
     }

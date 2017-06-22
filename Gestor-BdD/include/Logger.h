@@ -29,6 +29,7 @@ private:
 
 public:
     static Logger* getInstance ();
+    static void destruir ();
 
     ssize_t debug(string tag, string msg);
     ssize_t info(string tag, string msg);

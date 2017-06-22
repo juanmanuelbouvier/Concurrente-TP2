@@ -48,6 +48,7 @@ int main() {
         despachante.despachar();
     }
     SignalHandler :: destruir ();
+    Logger :: destruir ();
 
     return 0;
 }
