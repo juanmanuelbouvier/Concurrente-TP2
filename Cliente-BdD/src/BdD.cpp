@@ -1,6 +1,5 @@
 
 #include "../include/BdD.h"
-#include "../include/Logger.h"
 
 BdD::BdD(long nroCliente) : nroCliente (nroCliente) {
     this->peticiones = new Cola<Persona> ( "/bin/bash", 'p' );

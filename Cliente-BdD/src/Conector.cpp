@@ -32,6 +32,7 @@ bool Conector::conectar() {
     }
     this->conectado = true;
     this->nroCliente = cantClientes;
+    Logger :: destruir ();
     return true;
 }
 

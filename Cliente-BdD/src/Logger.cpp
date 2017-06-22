@@ -58,3 +58,10 @@ ssize_t Logger::warn(string tag, string msg) {
 ssize_t Logger::error(string tag, string msg) {
     return escribir(ERROR, tag, msg);
 }
+
+void Logger::destruir() {
+    if ( instance != NULL ) {
+        delete ( instance );
+        instance = NULL;
+    }
+}

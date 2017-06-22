@@ -87,9 +87,11 @@ int main() {
 
                 case (SALIR):
                     Logger :: getInstance() -> info( "Cliente", "Soy el cliente nro " + to_string(conector->verNroCliente()) + " y me voy a desconectar" );
+                    delete bdd;
+                    SignalHandler :: destruir ();
+                    Logger :: destruir();
                     conector->desconectar();
                     delete conector;
-                    delete bdd;
                     exit(0);
 
                 default:
@@ -102,9 +104,9 @@ int main() {
     } else {
         cout << "No se pudo conectar el cliente a la base de datos. Intentar reiniciando el gestor para regenerar el contador de conexiones." << endl;
     }
-
     SignalHandler :: destruir ();
 
+    Logger :: destruir ();
     delete conector;
 
     return 0;
